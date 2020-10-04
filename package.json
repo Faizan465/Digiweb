@@ -2,7 +2,7 @@
   "name": "reactappdemo",
   "version": "0.1.0",
   "private": true,
-  "homepage": "https://mohammadfaizan.000webhostapp.com/",
+ "homepage": "https://github.com/Faizan465/Digiweb/tree/main",
   "dependencies": {
     "@testing-library/jest-dom": "^4.2.4",
     "@testing-library/react": "^9.5.0",
@@ -12,7 +12,7 @@
     "contact": "^0.2.5",
     "github": "^14.0.0",
     "google-maps-react": "^2.0.6",
-    "homepage": "https://localhost:44327/api/Submit",
+   
     "react": "^16.13.1",
     "react-dom": "^16.13.1",
     "react-google-recaptcha": "^2.1.0",
