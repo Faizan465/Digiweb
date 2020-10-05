@@ -25,8 +25,6 @@ function App() {
 <Route path="/portfolios" component={Portfolios} />
 <Route path="/blogs" component={Blogs} />
 <Route path="/contact" component={Contact} />
-
-
 </>
 </Switch>
 

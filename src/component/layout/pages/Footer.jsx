@@ -28,7 +28,7 @@ class Footer  extends Component {
 								<li><Link to="/services" className="py-2 d-block">What We Do</Link></li>
 								
 								
-								<li><a href="tel:8383049524" className="py-2 d-block">Call Us</a></li>
+								<li><a href="" className="py-2 d-block">Call Us</a></li>
 							</ul>
 						</div>
 					</div>
@@ -52,7 +52,7 @@ class Footer  extends Component {
 								<ul>
 									<li><span className="icon fa fa-map marker"></span><span className="text">D 15/219 Sigra Varanasi</span></li>
 									<li> <a href="tel:8383049524"><span className="icon fa fa-phone"></span><span className="text">+91 8383049524</span></a></li>
-									<li><a href="mailto:mf496860@gmail.com.com"><span className="icon fa fa-paper-plane pr-4"></span><span className="text">mf49686@gmail.com</span></a></li>
+									<li><a href="mailto:mf496860@gmail.com"><span className="icon fa fa-paper-plane pr-4"></span><span className="text">mf49686@gmail.com</span></a></li>
 								</ul>
 							</div>
 						</div>
@@ -60,7 +60,6 @@ class Footer  extends Component {
 				</div>
 				<div className="row">
 					<div className="col-md-12 text-center">
-	
 						<p>
 							Copyright & copy;<script>document.write(new Date().getFullYear());</script> All rights reserved |Developed <i className="fa fa-heart" aria-hidden="true"></i>by  <a href="" target="_blank">DigiWeb Solution</a>
 							</p>

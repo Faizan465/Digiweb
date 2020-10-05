@@ -211,8 +211,8 @@ been able to provide best services for our customers.</p>
                       
            
        
-
-<section className="iq-features">
+<div className="wrapper">
+<section className="wrapper">
             <div className="container">
                <div className="row align-items-center">
                   <div className="col-lg-3 col-md-12"></div>
@@ -285,6 +285,7 @@ been able to provide best services for our customers.</p>
             </div>
         </section>
 <div>
+</div>
 	<center>
         <div className="col-lg-4"> 
 		

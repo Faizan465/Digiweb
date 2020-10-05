@@ -16,15 +16,13 @@ this.state={
 
 	}
 	
-	
-	
-	 async submit(){
+	 submit(){
 		const data = { name: 'faiz',email: 'mf496860@gmail.com',subject: 'hi',message: 'hii' };
 
- await fetch('https://localhost:44327/api/Submit', {
+ fetch('https://localhost:44327/api/Submit', {
   method: 'POST', // or 'PUT'
   headers: {
-	'mode':'no-cors',
+	
 	 'Content-Type': 'application/json',
   },
   body: JSON.stringify(data),
