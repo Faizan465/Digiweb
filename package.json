@@ -1,8 +1,8 @@
 {
+  "homepage": "http://Faizan465.github.io/reactapps-deploy",
   "name": "reactappdemo",
   "version": "0.1.0",
   "private": true,
- "homepage": "https://github.com/Faizan465/Digiweb/tree/main",
   "dependencies": {
     "@testing-library/jest-dom": "^4.2.4",
     "@testing-library/react": "^9.5.0",
@@ -10,12 +10,13 @@
     "axios": "^0.20.0",
     "bootstrap": "^4.5.2",
     "contact": "^0.2.5",
+    "gh-pages": "^3.1.0",
     "github": "^14.0.0",
     "google-maps-react": "^2.0.6",
-   
     "react": "^16.13.1",
     "react-dom": "^16.13.1",
     "react-google-recaptcha": "^2.1.0",
+    "react-native": "^0.63.3",
     "react-router-dom": "^5.2.0",
     "react-scripts": "3.4.3",
     "react-select": "^3.1.0",
@@ -43,5 +44,8 @@
       "last 1 firefox version",
       "last 1 safari version"
     ]
+  },
+  "devDependencies": {
+    "@types/react-native": "^0.63.23"
   }
 }

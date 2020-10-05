@@ -7,19 +7,19 @@ class Header extends Component {
         return ( 
 			
             <div>
+				
          	<div className="wrap">
 			<div className="container">
 				<div className="row justify-content-between">
 					<div className="col-12 col-md d-flex align-items-center">
-					<h1><p className="mb-0 phone"><span className="mailus">Phone no:</span><a href="tel:8383049524">8383049524</a> or <span className="mailus">email us:</span> <a href="mailto:mf496860@gmail.com.com">mf496860@gmail.com.com</a></p></h1>
+					<h1><p className="mb-0 phone"><span className="text">Phone no:</span><a href="tel:8383049524">8383049524</a> or <span className="text">email us:</span> <a href="mailto:mf496860@gmail.com.com">mf496860@gmail.com.com</a></p></h1>
 					</div>
 					<div className="col-12 col-md d-flex justify-content-md-end">
 						<div className="social-media">
 							<p className="mb-0 d-flex">
 								<a href="https://www.facebook.com/abcsolutionco" className="d-flex align-items-center justify-content-center"><span className="fa fa-facebook"><i className="sr-only">Facebook</i></span></a>
 								<a href="https://twitter.com/home" className="d-flex align-items-center justify-content-center"><span className="fa fa-twitter"><i className="sr-only">Twitter</i></span></a>
-								<a href="#" className="d-flex align-items-center justify-content-center"><span className="fa fa-instagram"><i className="sr-only">Instagram</i></span></a>
-								<a href="#" className="d-flex align-items-center justify-content-center"><span className="fa fa-linkldn"><i className="sr-only">Linkldn</i></span></a>
+								<a href="https://www.linkedin.com/company/68905967/admin/" className="d-flex align-items-center justify-content-center"><span className="fa fa-linkldn"><i className="sr-only">Linkldn</i></span></a>
 							</p>
 						</div>
 					</div>
@@ -59,6 +59,7 @@ class Header extends Component {
 				</div>
 			</div>
 		</nav>
+		
 		</div> 
 	
          );

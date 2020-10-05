@@ -363,7 +363,7 @@ been able to provide best services for our customers.</p>
 											<li>We sign NDA and Confidentiality Agreements as required by you.</li>
 											<li>All our employees are full-time employees, and are bound by the company’s Confidentiality and Non-Disclosure clauses.</li>
 											<li>Additionally, for sensitive projects, we create isolated cells disconnected from any public network.</li>
-											<li>At a practical level, all CD-Writers need authorization for usage. Internet uploads larger than a threshold also need authorization.</li>
+										
 											
 										</ol>
 									</div>
@@ -485,11 +485,11 @@ been able to provide best services for our customers.</p>
 							<div className="text mt-3 float-right d-block">
 								<div className="d-flex align-items-center pt-2 mb-4 topp">
 									<div className="one">
-										<span className="day">29</span>
+										<span className="day">15</span>
 									</div>
 									<div className="two pl-1">
-										<span className="yr">2020</span>
-										<span className="mos">June</span>
+										<span className="yr">2019</span>
+										<span className="mos">August</span>
 									</div>
 								</div>
 								<h3 className="heading"><a href="https://www.youtube.com/watch?v=5tcOQJ9E11I">Why Lead Generation is Key for Business Growth</a></h3>
