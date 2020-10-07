@@ -8,7 +8,7 @@ class About extends Component {
         return (
             <div>
 
-<section className="hero-wrap hero-wrap-2" style={{backgroundImage: 'url(react/images/about.jpg)'}} data-stellar-background-ratio="0.0">
+<section className="hero-wrap hero-wrap-2" style={{backgroundImage: 'url(images/about.jpg)'}} data-stellar-background-ratio="0.0">
 <div className="overlay"></div>
   <div className="container">
     <div className="row no-gutters slider-text align-items-end justify-content-center">
@@ -81,10 +81,8 @@ class About extends Component {
 <br/>
 <br/>
 <br/>
-           
-
-  
-
+ 
+<center>
             <div class="aboutus-area">
     <div className="container">
         <div className="row">
@@ -95,7 +93,7 @@ class About extends Component {
             <div className="col-md-6 col-sm-6 col-xs-12">
                 <div className="aboutus-content ">
                     <h2><p><span>Why We Are The Best ?</span></p></h2>
-                  <h2>  Why Choose Us ?</h2> <span><ul><li className="text" style={{fontSize:'20'}}>Your success is our success</li><li className="text" style={{fontSize:'20'}}>Cost Effectiveness</li><li className="text" style={{fontSize:'20'}}>Fast Response Times</li><li className="text">Supporting Productivity</li></ul></span>
+                  <h2>  Why Choose Us ?</h2> <span><ul><li className="text" style={{fontSize:'20'}}>Your success is our success</li><li className="text" style={{fontSize:'20'}}>Cost Effectiveness</li><li className="text" style={{fontSize:'20'}}>Fast Response Times</li><li style={{fontSize:'20'}} className="text">Supporting Productivity</li></ul></span>
                     
                     <p></p>
                     <p style={{fontSize:'15'}}>Culture is important to DigiWeb Solution, our company values aren't just paper statements. This is a stimulating and fun place to work. Happy and smart people create better service. Like many providers, we recognise that plain speaking is a key element in your decision-making and ensuring that your technology works for you.</p>
@@ -104,21 +102,21 @@ class About extends Component {
                       <div className="col-lg-12 col-md-12 col-sm-12 col-xs-12">  
                         <div className="single-counter text-center">
                             <h2 className="counter"><span>5</span></h2>
-                            <p>YEARS OF EXPERIENCED</p>
+                            <p>YEARS OF EXP</p>
                         </div>
                         
                         <div className="single-counter text-center">
-                            <h2 className="counter"><span>20</span></h2>
+                            <h2 className="counter"><span>50</span></h2>
                             <p>WEBSITES COMPLETED</p>
                         </div>
                         
                         <div className="single-counter text-center">
-                            <h2 className="counter"><span>2</span></h2>
+                            <h2 className="counter"><span>5</span></h2>
                             <p>BUSSINESS PARTNER</p>
                         </div>
                         
                         <div className="single-counter text-center">
-                            <h2 className="counter"><span>10</span></h2>
+                            <h2 className="counter"><span>100</span></h2>
                             <p>CLIENTS</p>
                         </div>
                         </div>
@@ -130,9 +128,10 @@ class About extends Component {
         </div>
     </div>
 </div>
-
+</center>
          </div>  
             </div>
+           
             <br/>
             <br/>
             <br/>

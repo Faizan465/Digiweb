@@ -1,18 +1,17 @@
-import React, { Component } from 'react';
+import React, { Component } from 'react'; 
 import {Link} from 'react-router-dom';
 import 'bootstrap/dist/css/bootstrap.min.css';
 class Header extends Component {
     state = {  }
     render() { 
         return ( 
-			
-            <div>
-				
+				<div>
+
          	<div className="wrap">
 			<div className="container">
 				<div className="row justify-content-between">
 					<div className="col-12 col-md d-flex align-items-center">
-					<h1><p className="mb-0 phone"><span className="text">Phone no:</span><a href="tel:8383049524">8383049524</a> or <span className="text">email us:</span> <a href="mailto:mf496860@gmail.com.com">mf496860@gmail.com.com</a></p></h1>
+					<h1><p className="mb-0 phone"><span className="text">Phone no:</span><a href="tel:8383049524">8383049524</a> or <span className="text">email us:</span> <a href="mailto:mf496860@gmail.com">mf496860@gmail.com</a></p></h1>
 					</div>
 					<div className="col-12 col-md d-flex justify-content-md-end">
 						<div className="social-media">
@@ -61,7 +60,7 @@ class Header extends Component {
 		</nav>
 		
 		</div> 
-	
+		
          );
     }
 }

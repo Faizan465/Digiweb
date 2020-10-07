@@ -1,10 +1,9 @@
-import React, { Component } from 'react';
+import React, {Component} from 'react';
 import {Link} from 'react-router-dom';
 import 'bootstrap/dist/css/bootstrap.min.css';
-import {Form} from 'react';
 import './home.css';
 import axios from 'axios';
-class Home extends  React.Component {
+class Home extends Component {
 	constructor(props){
 		super(props);
 		this.state={
@@ -12,25 +11,12 @@ class Home extends  React.Component {
 		
 		};
 		
-		
 			}
-			
-				componentDidMount() {
-					axios.post('https://localhost:44327/api/Submit')
-					.then(response => {
-					  this.setState({ imageURL: response.data.message });
-					})
-					.catch(error => {
-					  console.log(error);
-					});
-				  }
-		
+	
     render() { 
         return (	
 
-	<div >
-
-		
+	<div>
 	<div className="hero-wrap js-smallheight" style={{backgroundImage: 'url(react/images/image_4.jpg)'}} data-stellar-background-ratio="1.0">
 		<div className="overlay"></div>
 		
@@ -593,7 +579,7 @@ been able to provide best services for our customers.</p>
 			</div>
 		</section>
 		
-		<div id="ftco-loader" className="show fullscreen"><svg className="circular" width="48px" height="48px"><circle className="path-bg" cx="24" cy="24" r="22" fill="none" stroke-width="4" stroke="#eeeeee"/><circle className="path" cx="24" cy="24" r="22" fill="none" stroke-width="4" strokeMiterlimit="10" stroke="#F96D00"/></svg></div>
+		<div id="ftco-loader" className="show fullscreen"><svg className="circular" width='48px' height="48px"><circle className="path-bg" cx="24" cy="24" r="22" fill="none" strokeWidth="4" stroke="#eeeeee"/><circle className="path" cx="24" cy="24" r="22" fill="none" strokeWidth="4" strokeMiterlimit="10" stroke="#F96D00"/></svg></div>
 		<div className="icon-bar">
   <a href="https://www.facebook.com/abcsolutionco" className="facebook"><i className="fa fa-facebook"></i></a>
   <a href="https://twitter.com/home" className="twitter"><i className="fa fa-twitter"></i></a>

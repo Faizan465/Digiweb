@@ -15,7 +15,7 @@ class Footer  extends Component {
 							<ul className="ftco-footer-social list-unstyled mt-2">
 								<li className="ftco-animate"><a href="#"><span className="fa fa-twitter"></span></a></li>
 								<li className="ftco-animate"><a href="#"><span className="fa fa-facebook"></span></a></li>
-								<li className="ftco-animate"><a href="#"><span className="fa fa-instagram"></span></a></li>
+								<li className="ftco-animate"><a href="#"><span className="fa fa-github"></span></a></li>
 							</ul>
 						</div>
 					</div>
@@ -67,6 +67,8 @@ class Footer  extends Component {
 					</div>
 				</div>
 			</footer> 
+
+			
             </div>
           );
     }

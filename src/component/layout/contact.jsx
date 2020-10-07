@@ -1,8 +1,9 @@
-import React, { Component } from 'react';
+import React, { Component } from 'react'; 
 import {Link} from 'react-router-dom';
 import {Map, InfoWindow, Marker, GoogleApiWrapper} from 'google-maps-react';
 import axios from 'axios';
 import ReCAPTCHA from "react-google-recaptcha";
+
 
 class Contact extends Component {
 	
@@ -19,22 +20,14 @@ this.state={
 
 
 	}
-	
-	
 
-
-
-	
-
-	
-	
 	 submit(){
 
 		
 	
 var url = 'https://localhost:44327/api/Submit';
 const data = {name:"faiz",email:"mf466@gmail.com",subject:"hii",message:"hii"}
-  fetch(url, {
+  axios.post(url, {
   method: 'POST', // or 'PUT'
   headers: {
 	
@@ -152,13 +145,7 @@ const data = {name:"faiz",email:"mf466@gmail.com",subject:"hii",message:"hii"}
 													<textarea name="message" className="form-control" id="message" cols="30" rows="4" placeholder="Message" onChangeText={(text) => this.updateValue(text,'message')}></textarea>
 												</div>
 											</div>
-											<div className="col-md-12">
-											<ReCAPTCHA
-    sitekey="6LdweNMZAAAAAMfFhQV6b7eT4J4YWR6smicuw6Zi"
-	onChange={onChange}
-	
-  />,
-  </div>
+											
 											<div className="col-md-12">
 												<div className="form-group">
 													<button onClick={()=>this.submit()}  className="btn btn-primary  px-5 py-4"><h4>Submit</h4></button>
@@ -182,21 +169,9 @@ const data = {name:"faiz",email:"mf466@gmail.com",subject:"hii",message:"hii"}
 		</div>
 	</section>
     <div className="col-md-5 order-md-first d-flex align-items-stretch">
-    <div  className="map" >
-    <Map google={this.props.google} zoom={14}>
- 
- <Marker onClick={this.onMarkerClick}
-         name={'Current location'} />
-<div>
-           
-            </div>
- <InfoWindow onClose={this.onInfoWindowClose}>
-     
- </InfoWindow>
-</Map>		
-							</div>
+   
                             </div>
-							 <div style={{position: 'fixed' ,right: '3px', bottom: '180px' ,cursor: 'pointer',fontFamily: 'Arial,Helvetica,sans-serif', zIndex: '999'}}><a href="whatsapp://send?phone=+918383049524&amp;text=Hi, I contacted you through your website mobins Clinic."><p className="wa__btn_popup_icon"><img src="https://www.apollofertility.com/international-patient/img/whatsapp-icon.png" alt="" width='50' height='50' /></p></a></div>
+							 <div style={{position: 'fixed' ,right: '3px', bottom: '180px' ,cursor: 'pointer',fontFamily: 'Arial,Helvetica,sans-serif', zIndex: '999'}}><a href="whatsapp://send?phone=+918383049524&amp;text=Hi, I contacted you through your website DigiWeb Solution."><p className="wa__btn_popup_icon"><img src="https://www.apollofertility.com/international-patient/img/whatsapp-icon.png" alt="" width='50' height='50' /></p></a></div>
                             </div>
            
             
@@ -204,8 +179,11 @@ const data = {name:"faiz",email:"mf466@gmail.com",subject:"hii",message:"hii"}
          );
     }
 }
+
+
+
  
 
 export default GoogleApiWrapper({
-    apiKey: ("AIzaSyA0GBb8m4yW_64vZf0-AN9wSvr6cPaog5Y")
+    apiKey: ("6LddL9QZAAAAAAhy_B0lZEzhZXSiqLSgFmhAnRrp")
   })(Contact)
