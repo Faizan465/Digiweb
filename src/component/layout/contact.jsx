@@ -7,48 +7,44 @@ import ReCAPTCHA from "react-google-recaptcha";
 
 class Contact extends Component {
 	
-	constructor(){
-super();
+	constructor(props){
+super(props);
 this.state={
+	id:'',
 	name: '',
 	email: '',
 	message: '',
 	subject: ''
 
 
-};
+}
+
+
 
 
 	}
 
-	 submit(){
+	changeHandler = (e) => {
+this.setState( {[e.target.name]: e.target.value})
 
-		
-	
-var url = 'https://localhost:44327/api/Submit';
-const data = {name:"faiz",email:"mf466@gmail.com",subject:"hii",message:"hii"}
-  axios.post(url, {
-  method: 'POST', // or 'PUT'
-  headers: {
-	
-	 'Content-Type': 'application/json',
-  },
-  body: JSON.stringify(data),
+	}
+
+	submit = e => {
+e.preventDefault()
+console.log(this.state)
+axios.post('https://localhost:5001/api/Submit',this.state).then(response => {
+console.log(response)
+
 })
-.then(response => response.json())
-.then(data => {
-  console.log('Success:', data);
-})
-.catch((error) => {
-  console.error('Error:', error);
-});
+.catch(error => {
+	console.log(error)
+})		
+
 	}
 	
     render() { 
-
-		function onChange(value) {
-			console.log("Captcha value:", value);
-		  }
+const { name, email, subject, message} = this.state
+		
         return ( 
             <div>
             
@@ -119,41 +115,41 @@ const data = {name:"faiz",email:"mf466@gmail.com",subject:"hii",message:"hii"}
 							<div className="col-md-7">
 								<div className="contact-wrap w-100 p-md-5 p-4">
 									<h1 className="mb-4">Contact Us</h1>
-								
+								<form onSubmit={this.submit}>
 										<div className="row">
 											<div className="col-md-6">
 												<div className="form-group">
 													<label className="label" for="name">Full Name</label>
-													<input type="text" className="form-control" name="name" id="name" placeholder="Name" onChangeText={(text) => this.updateValue(text,'name')}/>
+													<input type="text" className="form-control" name="name" id="name" placeholder="Name"  value={name} onChange={this.changeHandler}/>
 												</div>
 											</div>
 											<div className="col-md-6"> 
 												<div className="form-group">
 													<label className="label" for="email">Email Address</label>
-													<input type="email" className="form-control" name="email" id="email" placeholder="Email" onChangeText={(text) => this.updateValue(text,'email')}/>
+													<input type="email" className="form-control" name="email" id="email"  value={email}  placeholder="Email" onChange={this.changeHandler}/>
 												</div>
 											</div>
 											<div className="col-md-12">
 												<div className="form-group">
 													<label className="label" for="subject">Subject</label>
-													<input type="text" className="form-control" name="subject" id="subject" placeholder="Subject" onChangeText={(text) => this.updateValue(text,'subject')}/>
+													<input type="text" className="form-control" name="subject" id="subject" value={subject} placeholder="Subject" onChange={this.changeHandler}/>
 												</div>
 											</div>
 											<div className="col-md-12">
 												<div className="form-group">
 													<label className="label" for="#">Message</label>
-													<textarea name="message" className="form-control" id="message" cols="30" rows="4" placeholder="Message" onChangeText={(text) => this.updateValue(text,'message')}></textarea>
+													<textarea name="message" name="message" className="form-control" id="message" cols="30" rows="4" placeholder="Message" value={message} onChange={this.changeHandler}></textarea>
 												</div>
 											</div>
 											
 											<div className="col-md-12">
 												<div className="form-group">
-													<button onClick={()=>this.submit()}  className="btn btn-primary  px-5 py-4"><h4>Submit</h4></button>
+													<button  type="submit"   className="btn btn-primary  px-5 py-4"><h4>Submit</h4></button>
 													<div className="submitting"></div>
 												</div>
 											</div>
 										</div>
-									
+										</form>
 								</div>
 							</div>
 							

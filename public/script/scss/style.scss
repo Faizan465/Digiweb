@@ -28,7 +28,9 @@ $secondary: #ffa41b;
 }
 
 
-
+html {
+	// overflow-x: hidden;
+}
 body {
 	font-family: $font-primary;
 	background: $white;
@@ -971,7 +973,8 @@ textarea.form-control {
 
 //SINGLE AUTHOR
 .about-author{
-
+	img{
+	}
 	.desc{
 		h3{
 			font-size: 24px;
@@ -1077,7 +1080,8 @@ textarea.form-control {
 		&:-moz-placeholder { /* Firefox 18- */
 		  color: rgba(0,0,0,.8);
 		}
-		
+		&:focus, &:active {
+		}
 	}
 	textarea.form-control {
 		height: inherit!important;
@@ -1610,7 +1614,7 @@ textarea.form-control {
 .mfp-with-zoom .mfp-container,
 .mfp-with-zoom.mfp-bg {
   opacity: 0;
-  
+  -webkit-backface-visibility: hidden;
   -webkit-transition: all 0.3s ease-out; 
   -moz-transition: all 0.3s ease-out; 
   -o-transition: all 0.3s ease-out; 
@@ -1659,7 +1663,8 @@ textarea.form-control {
 			background-position: top center !important;
 		}
 	}
-	
+	.block-18{
+	}
 	.text{
 		strong.number{
 			font-weight: 700;
@@ -1788,9 +1793,16 @@ textarea.form-control {
 
 .block-6 {
 	margin-bottom: 40px;
-	
+	.icon {
+		span {
+			&:before {
+			}
+		}
+	}
 	.media-body {
-		
+		.heading {
+
+		}
 		p {
 			font-size: 16px;
 		}

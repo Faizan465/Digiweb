@@ -1,33 +1,50 @@
-import React, {Component} from 'react';
+import React , {Component} from 'react';
 import {Link} from 'react-router-dom';
 import 'bootstrap/dist/css/bootstrap.min.css';
 import './home.css';
 import axios from 'axios';
+import { Circle } from 'google-maps-react';
 class Home extends Component {
 	constructor(props){
 		super(props);
 		this.state={
-		imageURL:''
+			name: '',
+			email: '',
+			service:'',
+			message: '',
+			
 		
-		};
+		
+		}
+		
+			}
+		
+			changeHandler = (e) => {
+		this.setState( {[e.target.name]: e.target.value})
+		
+			}
+		
+			submit = e => {
+		e.preventDefault()
+		console.log(this.state)
+		axios.post('https://reqres.in/api/users',this.state).then(response => {
+		console.log(response)
+		
+		})
+		.catch(error => {
+			console.log(error)
+		})		
 		
 			}
 	
     render() { 
+		const { name, email, service, message} = this.state
         return (	
 
 	<div>
-	<div className="hero-wrap js-smallheight" style={{backgroundImage: 'url(react/images/image_4.jpg)'}} data-stellar-background-ratio="1.0">
-		<div className="overlay"></div>
+	<div className="hero-wrap js-smallheight" style={{backgroundImage: 'url(images/image_4.jpg)'}} data-stellar-background-ratio="1.0">
 		
 		<div className="container">
-		
-		<br/>
-		<br/>
-		<br/>
-		<br/>
-		<br/>
-		
 			<div className="row no-gutters slider-text js-smallheight align-items-center" data-scrollax-parent="true">
 				<div className="col-md-8 ftco-animate mt-5 pt-md-5" data-scrollax=" properties: { translateY: '70%' }">
 					<div className="row">
@@ -36,7 +53,7 @@ class Home extends Component {
 						</div>
 					</div>
 					<h1 className="mb-4" data-scrollax="properties: { translateY: '30%', opacity: 0 }">Welcome To DigiWeb Solution</h1>
-					<p>< Link  to="/about" className="btn btn-primary px-5 py-4"><h4>Read more</h4></Link></p>
+					<p>< Link  to="/about" className="btn btn-primary px-5 py-4"></Link></p>
 				</div>
 			</div>
 		</div>
@@ -531,16 +548,19 @@ been able to provide best services for our customers.</p>
 				<div className="row">
 					<div className="col-md-6 half ftco-animate">
 						<h2 className="mb-4">Don't hesitate to contact us</h2>
-						<form Action="" className="appointment" >
+						<form   onSubmit={this.submit}  >
 							<div className="row">
 								<div className="col-md-6">
 									<div className="form-group">
-										<input type="text" className="form-control" placeholder="Your Name"/>
+										<input type="text" className="form-control" placeholder="Your Name"  value={name} 
+										onChange={this.changeHandler}/>
 									</div>
 								</div>
 								<div className="col-md-6">
 									<div className="form-group">
-										<input type="text" className="form-control" placeholder="Email"/>
+										<input type="text" className="form-control" placeholder="Email" value={email} 
+										onChange={this.changeHandler}/>
+										
 									</div>
 								</div>
 								<div className="col-md-12">
@@ -554,22 +574,24 @@ been able to provide best services for our customers.</p>
 													<option value="">Web Development</option>
 													<option value="">E-commerce Development</option>
 													<option value="">Digital Marketing</option>
-													
+													value={service} 
+										onChange={this.changeHandler}
 												</select>
 											</div>
 										</div>
 									</div>
 								</div>
 
-								<div style={{position: 'fixed', right: '3px', bottom: '180px', cursor: 'pointer', fontFamily:'Arial,Helvetica,sans-serif', zIndex: '999'}}><a href="whatsapp://send?phone=+918383049524&amp;text=Hi, I contacted you through your  DigiWeb Solution"><p className="wa__btn_popup_icon"><img src="https://www.apollofertility.com/international-patient/img/whatsapp-icon.png" alt="" width='50' height='50'/></p></a></div>
+							
 								<div className="col-md-12">
 									<div className="form-group">
-										<textarea name="" id="" cols="30" rows="7" className="form-control" placeholder="Message"></textarea>
+										<textarea name="" id="" cols="30" rows="7" className="form-control" placeholder="Message" value={message} 
+										onChange={this.changeHandler}></textarea>
 									</div>
 								</div>
 								<div className="col-md-12">
 									<div className="form-group">
-										<button type="submit" value="Send message" onClick={() => this.componentDidMount() } className="btn btn-primary py-3 px-4"> <h2>Submit</h2></button>
+										<button type="submit" value="Send message"  className="btn btn-primary py-3 px-4"> <h2>Submit</h2></button>
 									</div>
 								</div>
 							</div>
@@ -578,8 +600,8 @@ been able to provide best services for our customers.</p>
 				</div>
 			</div>
 		</section>
+		<div id="ftco-loader" className="show fullscreen"><svg className="circular" width="48px" height="48px"><Circle className="path-bg" cx="24" cy="24" r="22" fill="none" strokeWidth-="4" stroke="#eeeeee"/><Circle className="path" cx="24" cy="24" r="22" fill="none" strokeWidth="4" strokeMiterlimit="10" stroke="#F96D00"/></svg></div>
 		
-		<div id="ftco-loader" className="show fullscreen"><svg className="circular" width='48px' height="48px"><circle className="path-bg" cx="24" cy="24" r="22" fill="none" strokeWidth="4" stroke="#eeeeee"/><circle className="path" cx="24" cy="24" r="22" fill="none" strokeWidth="4" strokeMiterlimit="10" stroke="#F96D00"/></svg></div>
 		<div className="icon-bar">
   <a href="https://www.facebook.com/abcsolutionco" className="facebook"><i className="fa fa-facebook"></i></a>
   <a href="https://twitter.com/home" className="twitter"><i className="fa fa-twitter"></i></a>
@@ -587,7 +609,7 @@ been able to provide best services for our customers.</p>
   <a href="https://www.linkedin.com/company/68905967/admin/" className="linkedin"><i className="fa fa-linkedin"></i></a>
  
 </div>
-
+<div style={{position: 'fixed', right: '3px', bottom: '180px', cursor: 'pointer', fontFamily:'Arial,Helvetica,sans-serif', zIndex: '999'}}><a href="whatsapp://send?phone=+918383049524&amp;text=Hi, I contacted you through your  DigiWeb Solution"><p className="wa__btn_popup_icon"><img src="https://www.apollofertility.com/international-patient/img/whatsapp-icon.png" alt="" width='50' height='50'/></p></a></div>
 			
 
 			</div>
