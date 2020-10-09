@@ -12,9 +12,6 @@ class Home extends Component {
 			email: '',
 			service:'',
 			message: '',
-			
-		
-		
 		}
 		
 			}
