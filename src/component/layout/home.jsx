@@ -545,18 +545,16 @@ been able to provide best services for our customers.</p>
 				<div className="row">
 					<div className="col-md-6 half ftco-animate">
 						<h2 className="mb-4">Don't hesitate to contact us</h2>
-						<form   onSubmit={this.submit}  >
+						<form  onSubmit={this.submit}>
 							<div className="row">
 								<div className="col-md-6">
 									<div className="form-group">
-										<input type="text" className="form-control" placeholder="Your Name"  value={name} 
-										onChange={this.changeHandler}/>
+									<input type="text" className="form-control" name="name" id="name" placeholder="Name"  value={name} onChange={this.changeHandler}/>
 									</div>
 								</div>
 								<div className="col-md-6">
 									<div className="form-group">
-										<input type="text" className="form-control" placeholder="Email" value={email} 
-										onChange={this.changeHandler}/>
+									<input type="text" className="form-control" name="name" id="name" placeholder="Name"  value={name} onChange={this.changeHandler}/>
 										
 									</div>
 								</div>
@@ -565,15 +563,7 @@ been able to provide best services for our customers.</p>
 										<div className="form-field">
 											<div className="select-wrap">
 												<div className="icon"><span className="fa fa-chevron-down"></span></div>
-												<select name="" id="" className="form-control">
-													<option value="">Services</option>
-													<option value="">Web Design</option>
-													<option value="">Web Development</option>
-													<option value="">E-commerce Development</option>
-													<option value="">Digital Marketing</option>
-													value={service} 
-										onChange={this.changeHandler}
-												</select>
+												
 											</div>
 										</div>
 									</div>
@@ -588,7 +578,7 @@ been able to provide best services for our customers.</p>
 								</div>
 								<div className="col-md-12">
 									<div className="form-group">
-										<button type="submit" value="Send message"  className="btn btn-primary py-3 px-4"> <h2>Submit</h2></button>
+										<button type="submit"   className="btn btn-primary py-3 px-4"  > <h2>Submit</h2></button>
 									</div>
 								</div>
 							</div>

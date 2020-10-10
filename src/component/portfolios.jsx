@@ -1,6 +1,6 @@
 import React, { Component } from 'react';
 import './portfolio.css';
-class Portfolio  extends Component {
+class Portfolios  extends Component {
     state = {  }
     render() { 
         return ( 
@@ -179,5 +179,5 @@ class Portfolio  extends Component {
     }
 }
  
-export default Portfolio ;
+export default Portfolios ;
 

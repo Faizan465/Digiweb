@@ -19,7 +19,8 @@ function App() {
       
      <Header/>
      
-     <Route exact path= "/" component={Home} />  
+     <Route exact path= "/" component={Home} /> 
+     <Route exact path= "/home" component={Home} />  
 <Route path= "/about" component={About} />
 <Route path= "/services" component={Services}/>
 <Route path= "/portfolios" component={Portfolios} />

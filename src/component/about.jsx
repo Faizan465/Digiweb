@@ -83,7 +83,7 @@ class About extends Component {
 <br/>
  
 <center>
-            <div class="aboutus-area">
+            <div className="aboutus-area">
     <div className="container">
         <div className="row">
             <div className="col-xs-12">
