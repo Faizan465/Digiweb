@@ -30,7 +30,7 @@ class Header extends  Component {
        
         <nav className="navbar navbar-expand-lg navbar-dark ftco_navbar bg-dark ftco-navbar-light" id="ftco-navbar">
 			<div className="container">
-				<Link className="navbar-brand" to="/home"><img src="images/digiweb.png" style={{height:'40px',width:'60px',marginLeft:'40%',zIndex:'1'}}/></Link>
+				<Link className="navbar-brand" to="/home"><img src="images/digiweb.png" style={{height:'40px',width:'60px',marginLeft:'40%'}}/></Link>
 				<button className="navbar-toggler" type="button" data-toggle="collapse" data-target="#ftco-nav" aria-controls="ftco-nav" aria-expanded="false" aria-label="Toggle navigation">
 					<span className="oi oi-menu"></span> Menu
 				</button>

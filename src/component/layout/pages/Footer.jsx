@@ -6,7 +6,7 @@ class Footer  extends Component {
     render() { 
         return (
            
-				<div className="wrapper">
+				<div>
                <footer className="ftco-footer ftco-footer-2 ftco-section">
 			<div className="container">
 				<div className="row mb-5">

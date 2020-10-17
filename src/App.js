@@ -13,8 +13,7 @@ import Footer from  './component/layout/pages/Footer';
 function App() {
 
   return (
-
-<div className="wrapper">
+<div className="App">
     <Router> 
      <Header/>
      <Route exact path= "/" component={Home} /> 

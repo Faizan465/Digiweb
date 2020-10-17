@@ -106,7 +106,7 @@ class Home extends Component {
 		<div className="container">
 			<div className="row justify-content-center pb-5">
 				<div className="col-lg-6 heading-section text-center ftco-animate">
-					<h2 className="mb-4">More than <span>5+</span> years we provide <span>IT Solution</span></h2>
+					<h2 className="mb-4"> <span>Our Services</span> </h2>
 					<p>With an experience of more than 5+ years and caliber of qualified developers we have
 been able to provide best services for our customers.</p>
 				</div>
@@ -118,27 +118,48 @@ been able to provide best services for our customers.</p>
 							<span className="flaticon-web-programming"></span>
 						</div>
 						<div className="text">
-							<h3>Web Development</h3>
+							<h3>WebSite Design & Development</h3>
 							<p>Web Development is one term that encompasses every aspect of inculcating a presence on the World Wide Web. From the planning to implementation.</p>
 						</div>
 					</div>
 				</div>
+				
 				<div className="col-md-4">
 					<img src="images/services.svg" className="img-fluid" alt=""/>
 				</div>
+				
 				<div className="col-md-4">
 					<div className="services-2 text-center">
 						<div className="icon">
 							<span className="flaticon-secure"></span>
 						</div>
 						<div className="text">
-							<h3>E-commerce Solutions</h3>
+							<h3>Web & Ecommerce Solutions</h3>
 							<p>We help create customer-centric online store using the right platform to power your eCommerce website. We understand this and develop the right design and deployment strategy.</p>
 						</div>
 					</div>
+					
 				</div>
+				
 			</div>
+
+			
+			<div className="col-md-4">
+					<div className="services-2 text-center">
+						<div className="icon">
+							<span className="flaticon-secure"></span>
+						</div>
+						<div className="text">
+							<h3>Enterprises Solutions</h3>
+							<p>We implement solutions to help enterprise bring process, people, and data on one platform. We integrate various information flowing channels to one common platform within an enterprise..</p>
+						</div>
+						
+					</div>
+					
+				</div>
+				
 		</div>
+		
 	</section>
 
 	<section className="ftco-counter ftco-section ftco-no-pt img" id="section-counter">
