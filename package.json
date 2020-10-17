@@ -1,5 +1,5 @@
 {
-  "homepage": "http://Faizan465.github.io/reactapps-deploy",
+  "homepage": "./",
   "name": "reactappdemo",
   "version": "0.1.0",
   "private": true,
@@ -15,6 +15,7 @@
     "github": "^14.0.0",
     "google-maps-react": "^2.0.6",
     "netlify": "^4.8.0",
+    "node-sass": "^4.14.1",
     "react": "^16.13.1",
     "react-dom": "^16.13.1",
     "react-google-recaptcha": "^2.1.0",

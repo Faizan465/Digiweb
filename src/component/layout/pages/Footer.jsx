@@ -5,17 +5,18 @@ class Footer  extends Component {
     state = {  }
     render() { 
         return (
-            <div>
+           
+				<div className="wrapper">
                <footer className="ftco-footer ftco-footer-2 ftco-section">
 			<div className="container">
 				<div className="row mb-5">
 					<div className="col-md">
 						<div className="ftco-footer-widget mb-4">
-							<h2 className="ftco-footer-logo">DigiWeb<span>solution</span></h2>
+							<h2 className="ftco-footer-logo"><img src="images/digiweb.png" style={{height:'40px',width:'60px',marginLeft:'10%',zIndex:'0',backgroundColor:'#05091f'}}/></h2>
 							<ul className="ftco-footer-social list-unstyled mt-2">
-								<li className="ftco-animate"><a href="#"><span className="fa fa-twitter"></span></a></li>
-								<li className="ftco-animate"><a href="#"><span className="fa fa-facebook"></span></a></li>
-								<li className="ftco-animate"><a href="#"><span className="fa fa-github"></span></a></li>
+								<li className="ftco-animate"><Link to=""><span className="fa fa-twitter"></span></Link></li>
+								<li className="ftco-animate"><Link to=""><span className="fa fa-facebook"></span></Link></li>
+								<li className="ftco-animate"><Link to=""><span className="fa fa-github"></span></Link></li>
 							</ul>
 						</div>
 					</div>
@@ -28,7 +29,7 @@ class Footer  extends Component {
 								<li><Link to="/services" className="py-2 d-block">What We Do</Link></li>
 								
 								
-								<li><a href="" className="py-2 d-block">Call Us</a></li>
+								<li><Link to="" className="py-2 d-block">Call Us</Link></li>
 							</ul>
 						</div>
 					</div>
@@ -50,9 +51,9 @@ class Footer  extends Component {
 							<h2 className="ftco-heading-2">Have a Questions?</h2>
 							<div className="block-23 mb-3">
 								<ul>
-									<li><span className="icon fa fa-map marker"></span><span className="text">D 15/219 Sigra Varanasi</span></li>
-									<li> <a href="tel:8383049524"><span className="icon fa fa-phone"></span><span className="text">+91 8383049524</span></a></li>
-									<li><a href="mailto:mf496860@gmail.com"><span className="icon fa fa-paper-plane pr-4"></span><span className="text">mf49686@gmail.com</span></a></li>
+									<li><span className="icon fa fa-map marker"></span><span className="text"> Sigra Varanasi</span></li>
+									<li> <Link to="tel:8383049524"><span className="icon fa fa-phone"></span><span className="text">+91 8383049524</span></Link></li>
+									<li><Link to="mailto:mf496860@gmail.com"><span className="icon fa fa-paper-plane pr-4"></span><span className="text">mf49686@gmail.com</span></Link></li>
 								</ul>
 							</div>
 						</div>
@@ -61,15 +62,15 @@ class Footer  extends Component {
 				<div className="row">
 					<div className="col-md-12 text-center">
 						<p>
-							Copyright & copy;<script>document.write(new Date().getFullYear());</script> All rights reserved |Developed <i className="fa fa-heart" aria-hidden="true"></i>by  <a href="" target="_blank">DigiWeb Solution</a>
+							Copyright & copy;<script>document.write(new Date().getFullYear());</script> All rights reserved |Developed <i className="fa fa-heart" aria-hidden="true"></i>by  <Link to="" target="_blank">DigiWeb Solution</Link>
 							</p>
 						</div>
 					</div>
 				</div>
 			</footer> 
 
-			
-            </div>
+			</div>
+           
           );
     }
 }

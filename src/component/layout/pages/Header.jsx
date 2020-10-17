@@ -30,7 +30,7 @@ class Header extends  Component {
        
         <nav className="navbar navbar-expand-lg navbar-dark ftco_navbar bg-dark ftco-navbar-light" id="ftco-navbar">
 			<div className="container">
-				<Link className="navbar-brand" to="/home">Digi<span>Web</span></Link>
+				<Link className="navbar-brand" to="/home"><img src="images/digiweb.png" style={{height:'40px',width:'60px',marginLeft:'40%',zIndex:'1'}}/></Link>
 				<button className="navbar-toggler" type="button" data-toggle="collapse" data-target="#ftco-nav" aria-controls="ftco-nav" aria-expanded="false" aria-label="Toggle navigation">
 					<span className="oi oi-menu"></span> Menu
 				</button>
@@ -45,15 +45,15 @@ class Header extends  Component {
             </Link>
             <div className="dropdown-menu lg-menu">
            <h3><Link className="dropdown-item" to="/services"><b>Web Design & Development</b></Link></h3>
-		   <h3><a className="dropdown-item" href="#"><b>E-commerce Development</b></a></h3>
-		   <h3><a className="dropdown-item" href="#"><b>SEO</b></a></h3>
-		   <h3><a className="dropdown-item" href="#"><b>Digital Marketing</b></a></h3>
+		   <h3><a className="dropdown-item" href="/services"><b>E-commerce Development</b></a></h3>
+		   <h3><a className="dropdown-item" href="/services"><b>SEO</b></a></h3>
+		   <h3><a className="dropdown-item" href="/services"><b>Digital Marketing</b></a></h3>
             </div>
           </li>
 						<li className="nav-item"><Link to="/portfolios" className="nav-link">Portfolio</Link></li>
 						<li className="nav-item"><Link to="/blogs" className="nav-link">Blog</Link></li>
 						<li className="nav-item"><Link to="/contact" className="nav-link">Contact us</Link></li>
-						<li className="nav-item cta"><Link to="/contact" className="nav-link">Book a Demo</Link></li>
+						<li className="nav-item cta"><Link to="/contact" className="nav-link" style={{borderRadius:'5%'}}>Get a quote</Link></li>
 	
 					</ul>
 				</div>

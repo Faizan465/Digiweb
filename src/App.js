@@ -14,21 +14,17 @@ function App() {
 
   return (
 
-<div className="App">
-    <Router>
-      
+<div className="wrapper">
+    <Router> 
      <Header/>
-     
      <Route exact path= "/" component={Home} /> 
-     <Route exact path= "/home" component={Home} />  
+     <Route path= "/home" component={Home} />  
 <Route path= "/about" component={About} />
 <Route path= "/services" component={Services}/>
 <Route path= "/portfolios" component={Portfolios} />
 <Route path= "/blogs" component={Blogs} />
 <Route path= "/contact" component={Contact} />
-
 <Footer/>
-
 </Router>
 </div>
 

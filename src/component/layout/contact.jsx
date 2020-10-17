@@ -11,10 +11,10 @@ class Contact extends Component {
 super(props);
 this.state={
 	id:'',
-	name: '',
 	email: '',
-	message: '',
-	subject: ''
+	firstname: '',
+	lastname: '',
+	avatar: ''
 
 
 }
@@ -32,7 +32,7 @@ this.setState( {[e.target.name]: e.target.value})
 	submit = e => {
 e.preventDefault()
 console.log(this.state)
-axios.post('https://localhost:5001/api/Submit',this.state).then(response => {
+axios.post('https://reqres.in/api/users',this.state).then(response => {
 console.log(response)
 
 })
@@ -43,7 +43,7 @@ console.log(response)
 	}
 	
     render() { 
-const { name, email, subject, message} = this.state
+const { id, email, firstname, lastname,avatar} = this.state
 		
         return ( 
             <div>
@@ -120,7 +120,7 @@ const { name, email, subject, message} = this.state
 											<div className="col-md-6">
 												<div className="form-group">
 													<label className="label" for="name">Full Name</label>
-													<input type="text" className="form-control" name="name" id="name" placeholder="Name"  value={name} onChange={this.changeHandler}/>
+													<input type="text" className="form-control" name="name" id="id" placeholder="Name"  value={id} onChange={this.changeHandler}/>
 												</div>
 											</div>
 											<div className="col-md-6"> 
@@ -132,13 +132,19 @@ const { name, email, subject, message} = this.state
 											<div className="col-md-12">
 												<div className="form-group">
 													<label className="label" for="subject">Subject</label>
-													<input type="text" className="form-control" name="subject" id="subject" value={subject} placeholder="Subject" onChange={this.changeHandler}/>
+													<input type="text" className="form-control" name="subject" id="firstname" value={firstname} placeholder="Subject" onChange={this.changeHandler}/>
 												</div>
 											</div>
 											<div className="col-md-12">
 												<div className="form-group">
 													<label className="label" for="#">Message</label>
-													<textarea name="message" name="message" className="form-control" id="message" cols="30" rows="4" placeholder="Message" value={message} onChange={this.changeHandler}></textarea>
+													<textarea name="message" name="message" className="form-control" id="lastname" cols="30" rows="4" placeholder="Message" value={lastname} onChange={this.changeHandler}></textarea>
+												</div>
+											</div>
+											<div className="col-md-12">
+												<div className="form-group">
+													<label className="label" for="#">Message</label>
+													<textarea name="message" name="message" className="form-control" id="avatar" cols="30" rows="4" placeholder="Message" value={avatar} onChange={this.changeHandler}></textarea>
 												</div>
 											</div>
 											

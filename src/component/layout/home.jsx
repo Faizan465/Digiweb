@@ -39,23 +39,31 @@ class Home extends Component {
         return (	
 
 	<div>
-	<div className="hero-wrap js-smallheight" style={{backgroundImage: 'url(images/image_4.jpg)'}} data-stellar-background-ratio="1.0">
 		
+		<center>
+	<div className="hero-wrap js-smallheight" style={{backgroundImage: 'url(images/image_4.jpg)'}} data-stellar-background-ratio="1.0">
+		<div className ="overlay"></div>
 		<div className="container">
 			<div className="row no-gutters slider-text js-smallheight align-items-center" data-scrollax-parent="true">
 				<div className="col-md-8 ftco-animate mt-5 pt-md-5" data-scrollax=" properties: { translateY: '70%' }">
 					<div className="row">
 						<div className="col-md-7">
+							<br/>
+							<br/>
+							<br/>
+							<br/>
 						<h1><p className="mb-4 pl-md-5 line" data-scrollax="properties: { translateY: '30%', opacity: 0 }">An service <span>  For Services</span> </p></h1>
 						</div>
 					</div>
 					<h1 className="mb-4" data-scrollax="properties: { translateY: '30%', opacity: 0 }">Welcome To DigiWeb Solution</h1>
-					<p>< Link  to="/about" className="btn btn-primary px-5 py-4"></Link></p>
+					<p style={{marginRight:'40%'}}>< Link  to="/about"><button className="button px-1 py-1"><span> Read </span></button></Link></p>
+
+					
 				</div>
 			</div>
 		</div>
 	</div>
-
+	</center>
 	<section className="ftco-intro">
 		<div className="container">
 			<div className="row justify-content-end">
@@ -75,7 +83,7 @@ class Home extends Component {
 								<div className="line"></div>
 								<div className="icon"><span className="flaticon-light-bulb"></span></div>
 								<div className="media-body">
-									<h3 className="heading mb-3">E-Commerce  &amp; Solution </h3>
+									<h3 className="heading mb-3"> Enterprise Solution</h3>
 								</div>
 							</div>      
 						</div>
@@ -84,7 +92,7 @@ class Home extends Component {
 								<div className="line"></div>
 								<div className="icon"><span className="flaticon-web-programming"></span></div>
 								<div className="media-body">
-									<h3 className="heading mb-3">Web Design &amp;  Development</h3>
+									<h3 className="heading mb-3"> Web Design &amp;  Development </h3>
 								</div>
 							</div>      
 						</div>
