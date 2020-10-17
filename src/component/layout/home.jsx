@@ -40,7 +40,7 @@ class Home extends Component {
 
 	<div>
 		
-		<center>
+		
 	<div className="hero-wrap js-smallheight" style={{backgroundImage: 'url(images/image_4.jpg)'}} data-stellar-background-ratio="1.0">
 		<div className ="overlay"></div>
 		<div className="container">
@@ -63,7 +63,7 @@ class Home extends Component {
 			</div>
 		</div>
 	</div>
-	</center>
+	
 	<section className="ftco-intro">
 		<div className="container">
 			<div className="row justify-content-end">
