@@ -8,7 +8,7 @@ class About extends Component {
         return (
             <div>
 
-<section className="hero-wrap hero-wrap-2" style={{backgroundImage: 'url(images/abt.png)',height:'80%'}} >
+<section className="hero-wrap hero-wrap-2" style={{backgroundImage: 'url(images/abt.png)'}} >
 <div className="overlay"> </div>
   <div className="container">
     <div className="row no-gutters slider-text align-items-end justify-content-center">

@@ -1,6 +1,6 @@
 import React from 'react';
 import './App.css';
-import {BrowserRouter as Router , Route,Switch} from 'react-router-dom' ;
+import {BrowserRouter as Router , Route,Switch,Redirect} from 'react-router-dom' ;
 import Header from  './component/layout/pages/Header';
 import Home from './component/layout/home';
 import About from './component/about';
@@ -18,13 +18,15 @@ function App() {
    <Router> 
      <Header/>
      <Switch>
-     <Route exact path= "/" component={Home} /> 
+     
      <Route path= "/home" component={Home} />  
+     <Route exact path= "/" component={Home} /> 
 <Route path= "/about" component={About} />
 <Route path= "/services" component={Services}/>
 <Route path= "/portfolios" component={Portfolios} />
 <Route path= "/blogs" component={Blogs} />
 <Route path= "/contact"  component={Contact} />
+<Redirect to ="/" />
 </Switch>
 <Footer/>
 

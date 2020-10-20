@@ -47,9 +47,8 @@ class Home extends Component {
 
 	<div>
 		
-		
-	<div className="hero-wrap js-mediumheight" style={{backgroundImage: 'url(images/wec.png)' }} data-stellar-background-ratio="">
-		
+	<div className="hero-wrap js-smallheight" style={{backgroundImage: 'url(images/wec.png)' }}>
+		<div className="overlay"> </div>
 		<div className="container">
 			<div className="row no-gutters slider-text js-smallheight align-items-center" data-scrollax-parent="true">
 				<div className="col-md-8 ftco-animate mt-5 pt-md-5" data-scrollax=" properties: { translateY: '70%' }">
@@ -59,12 +58,12 @@ class Home extends Component {
 							<br/>
 							<br/>
 							<br/>
-						<h1><p   style={{color:'black'}}className="mb-4 pl-md-5 " data-scrollax="properties: { translateY: '30%', opacity: 0 }">An service <span>  For Services</span> </p></h1>
+						
 						</div>
 					</div>
 					<center>
-					<h1 style={{color:'black'}} className="mb-4" data-scrollax="properties: { translateY: '50%', opacity: 1 }">Welcome To DigiWeb Solution</h1>
-					<p >< Link  to="/about"><button className="button px-1 py-1"><span> More </span></button></Link></p>
+				<center><h1  className="mb-4" data-scrollax="properties: { translateY: '80%', opacity: 0 }">Welcome To DigiWeb Solution</h1></center>
+					<p >< Link  to="/about"><button className="button px-1 py-1" style={{marginLeft:'10%'}}><span> Read More </span></button></Link></p>
 					</center>
 					
 				</div>
