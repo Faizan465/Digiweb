@@ -43,7 +43,7 @@ console.log(response)
 	}
 	
     render() { 
-const { id, email,first_name, last_name,avatar} = this.state
+const { id, email, first_name, last_name,avatar} = this.state
 		
         return ( 
             <div>
@@ -116,21 +116,21 @@ const { id, email,first_name, last_name,avatar} = this.state
 									<h1 className="mb-4">Contact Us</h1>
 								<form onSubmit={this.submit}>
 										<div className="row">
-										<div className="col-md-6"> 
+										<div className="col-md-12"> 
 												<div className="form-group">
 													<label className="label" for="email">Id</label>
-													<input type="text" className="form-control" name="id" id="id"  value={id}  placeholder="Email" onChange={this.changeHandler}/>
+													<input type="number" className="form-control" name="id" id="id"  value={id}   onChange={this.changeHandler}/>
 												</div>
-											<div className="col-md-6">
+											<div className="col-md-12">
 												<div className="form-group">
 													<label className="label" for="name">email</label>
 													<input type="text" className="form-control" name="email" id="email" placeholder="Name"  value={email} onChange={this.changeHandler}/>
 												</div>
 											</div>
-											<div className="col-md-6"> 
+											<div className="col-md-12"> 
 												<div className="form-group">
 													<label className="label" for="email">email</label>
-													<input type="text" className="form-control" name="first_name" id="first_name"  value={first_name}  placeholder="Email" onChange={this.changeHandler}/>
+													<input type="text" className="form-control" name="first_name" id="firstname"  value={first_name}  placeholder="Email" onChange={this.changeHandler}/>
 												</div>
 											</div>
 											<div className="col-md-12">
