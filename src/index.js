@@ -4,6 +4,7 @@ import './index.css';
 import App from './App';
 import * as serviceWorker from './serviceWorker';
 import 'bootstrap/dist/css/bootstrap.css';
+var cors = require('cors');
 
 
 ReactDOM.render(
@@ -11,7 +12,7 @@ ReactDOM.render(
     <App/>,
   </React.StrictMode>,
   document.getElementById('root')
+  
 );
-
 
 serviceWorker.unregister();

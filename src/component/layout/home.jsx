@@ -4,15 +4,22 @@ import 'bootstrap/dist/css/bootstrap.min.css';
 import './home.css';
 import axios from 'axios';
 import { Circle } from 'google-maps-react';
+import  './home.js'
 class Home extends Component {
 	constructor(props){
 		super(props);
 		this.state={
+			id:'',
 			name: '',
 			email: '',
-			service:'',
-			message: '',
+			subject: '',
+			message: ''
+		
+		
 		}
+		
+		
+		
 		
 			}
 		
@@ -24,7 +31,7 @@ class Home extends Component {
 			submit = e => {
 		e.preventDefault()
 		console.log(this.state)
-		axios.post('https://reqres.in/api/users',this.state).then(response => {
+		axios.post('https://localhost:5001/api/Submit',this.state).then(response => {
 		console.log(response)
 		
 		})
@@ -33,16 +40,16 @@ class Home extends Component {
 		})		
 		
 			}
-	
-    render() { 
-		const { name, email, service, message} = this.state
+			
+			render() { 
+		const { id, name, email, subject,message} = this.state
         return (	
 
 	<div>
 		
 		
-	<div className="hero-wrap js-smallheight" style={{backgroundImage: 'url(images/image_4.jpg)'}} data-stellar-background-ratio="1.0">
-		<div className ="overlay"></div>
+	<div className="hero-wrap js-mediumheight" style={{backgroundImage: 'url(images/wec.png)' }} data-stellar-background-ratio="">
+		
 		<div className="container">
 			<div className="row no-gutters slider-text js-smallheight align-items-center" data-scrollax-parent="true">
 				<div className="col-md-8 ftco-animate mt-5 pt-md-5" data-scrollax=" properties: { translateY: '70%' }">
@@ -52,28 +59,30 @@ class Home extends Component {
 							<br/>
 							<br/>
 							<br/>
-						<h1><p className="mb-4 pl-md-5 line" data-scrollax="properties: { translateY: '30%', opacity: 0 }">An service <span>  For Services</span> </p></h1>
+						<h1><p   style={{color:'black'}}className="mb-4 pl-md-5 " data-scrollax="properties: { translateY: '30%', opacity: 0 }">An service <span>  For Services</span> </p></h1>
 						</div>
 					</div>
-					<h1 className="mb-4" data-scrollax="properties: { translateY: '30%', opacity: 0 }">Welcome To DigiWeb Solution</h1>
-					<p style={{marginRight:'40%'}}>< Link  to="/about"><button className="button px-1 py-1"><span> Read </span></button></Link></p>
-
+					<center>
+					<h1 style={{color:'black'}} className="mb-4" data-scrollax="properties: { translateY: '50%', opacity: 1 }">Welcome To DigiWeb Solution</h1>
+					<p >< Link  to="/about"><button className="button px-1 py-1"><span> More </span></button></Link></p>
+					</center>
 					
 				</div>
 			</div>
 		</div>
 	</div>
 	
-	<section className="ftco-intro">
-		<div className="container">
-			<div className="row justify-content-end">
+
+	<section className="ftco-intro" >
+		<div className="container" >
+			<div className="row justify-content-end" >
 				<div className="col-md-7">
 					<div className="row no-gutters d-flex align-items-stretch">
 						<div className="col-md-4 d-flex align-self-stretch ftco-animate">
 							<div className="services-1">
 								<div className="line"></div>
 								<div className="icon"><span className="flaticon-bolt"></span></div>
-								<div className="media-body">
+								<div className="media-body" style={{marginBottom:'50px'}}>
 									<h3 className="heading mb-3">Information Technology Services</h3>
 								</div>
 							</div>      
@@ -101,12 +110,13 @@ class Home extends Component {
 			</div>
 		</div>
 	</section>
-
+	
+	
 	<section className="ftco-section">
 		<div className="container">
 			<div className="row justify-content-center pb-5">
 				<div className="col-lg-6 heading-section text-center ftco-animate">
-					<h2 className="mb-4"> <span>Our Services</span> </h2>
+					<h2 className="mb-4"> <span>Our Services</span></h2>
 					<p>With an experience of more than 5+ years and caliber of qualified developers we have
 been able to provide best services for our customers.</p>
 				</div>
@@ -118,48 +128,64 @@ been able to provide best services for our customers.</p>
 							<span className="flaticon-web-programming"></span>
 						</div>
 						<div className="text">
-							<h3>WebSite Design & Development</h3>
-							<p>Web Development is one term that encompasses every aspect of inculcating a presence on the World Wide Web. From the planning to implementation.</p>
+							<h3>WebSite Development</h3>
+							<p>Let's define a website that can be rated as user friendly what it needs to have
+ Perfect look and feel
+ Ease of navigation
+ Interactive
+ Easy and fast opening pages web pages</p>
 						</div>
 					</div>
 				</div>
-				
 				<div className="col-md-4">
 					<img src="images/services.svg" className="img-fluid" alt=""/>
 				</div>
-				
+				<div className="col-md-4">
+					<div className="services-2 text-center">
+						<div className="icon">
+							<span className="flaticon-shopping art"></span>
+						</div>
+						<div className="text">
+							<h3> Web & E-commerce Solutions</h3>
+							<p>We help create customer-centric online store using the right platform to power your eCommerce website. We understand this and develop the right design and deployment strategy.</p>
+						</div>
+					</div>
+				</div>
+            <div className="col-md-4">
+					<div className="services-2 text-center">
+						<div className="icon">
+							<span className="flaticon-"></span>
+						</div>
+						<div className="text">
+							<h3>Enterprise Solutions</h3>
+							<p>We implement solutions to help enterprise bring process, people, and data on one platform. We integrate various information flowing channels to one common platform within an enterprise.</p>
+						</div>
+					</div>
+				</div>
+            <div className="col-md-4">
+					<div className="services-2 text-center">
+						<div className="icon">
+							<span className="flaticon-secure"></span>
+						</div>
+						<div className="text">
+							<h3>SEO</h3>
+							<p> SEO services is leading search engine marketing Company providing quality Search Engine Optimization, Social media, Google sponsor listing and various internet marketing Solutions.</p>
+						</div>
+					</div>
+				</div>
 				<div className="col-md-4">
 					<div className="services-2 text-center">
 						<div className="icon">
 							<span className="flaticon-secure"></span>
 						</div>
 						<div className="text">
-							<h3>Web & Ecommerce Solutions</h3>
-							<p>We help create customer-centric online store using the right platform to power your eCommerce website. We understand this and develop the right design and deployment strategy.</p>
+							<h3>Logo Design</h3>
+							<p>Logo design is the process of designing a logo. Branding is the process of building a brand. To be more specific, it is a strategy designed by companies to help people to quickly identify their products .</p>
 						</div>
 					</div>
-					
 				</div>
-				
 			</div>
-
-			
-			<div className="col-md-4">
-					<div className="services-2 text-center">
-						<div className="icon">
-							<span className="flaticon-secure"></span>
-						</div>
-						<div className="text">
-							<h3>Enterprises Solutions</h3>
-							<p>We implement solutions to help enterprise bring process, people, and data on one platform. We integrate various information flowing channels to one common platform within an enterprise..</p>
-						</div>
-						
-					</div>
-					
-				</div>
-				
 		</div>
-		
 	</section>
 
 	<section className="ftco-counter ftco-section ftco-no-pt img" id="section-counter">
@@ -180,32 +206,32 @@ been able to provide best services for our customers.</p>
       <div className="col-md-6 justify-content-center counter-wrap ftco-animate">
         <div className="block-18 mb-4">
           <div className="text">
-            <strong className="number" data-number="50">0</strong>
-            <span>Project Complete</span>
+            <strong className="number" data-percentage="90%">90%</strong>
+            <span>Deliver In Time</span>
           </div>
         </div>
       </div>
       <div className="col-md-6 justify-content-center counter-wrap ftco-animate">
         <div className="block-18 mb-4">
           <div className="text">
-            <strong className="number" data-number="100">0</strong>
-            <span>Happy Clients</span>
+            <strong className="number" data-percentage="80%">80%</strong>
+            <span>Cost Effectiveness</span>
           </div>
         </div>
       </div>
       <div className="col-md-6 justify-content-center counter-wrap ftco-animate">
         <div className="block-18 mb-4">
           <div className="text">
-            <strong className="number" data-number="5">0</strong>
-            <span>Business Partners</span>
+            <strong className="number" data-percentage="89%">89%</strong>
+            <span>Quality</span>
           </div>
         </div>
       </div>
       <div className="col-md-6 justify-content-center counter-wrap ftco-animate">
         <div className="block-18 mb-4">
           <div className="text">
-            <strong className="number" data-number="5">0</strong>
-            <span>IT Consultant</span>
+            <strong className="number" data-percentage="95%">95%</strong>
+            <span>Fast & Secure</span>
           </div>
         </div>
       </div>
@@ -456,7 +482,7 @@ been able to provide best services for our customers.</p>
 					<div className="col-md-12 testimonial">
 						<div className="carousel-testimony owl-carousel ftco-owl">
 							<div className="item">
-								<div className="testimony-wrap d-flex align-items-stretch" style={{backgroundImage: 'url(react/images/testimony-5.jpg)'}}>
+								<div className="testimony-wrap d-flex align-items-stretch" style={{backgroundImage: ''}}>
 									<div className="overlay"></div>
 									<div className="text">
 										<div className="line"></div>
@@ -467,7 +493,7 @@ been able to provide best services for our customers.</p>
 								</div>
 							</div>
 							<div className="item">
-								<div className="testimony-wrap d-flex align-items-stretch" style={{backgroundImage: 'url(react/images/testimony-2.jpg)'}}>
+								<div className="testimony-wrap d-flex align-items-stretch" style={{backgroundImage: ''}}>
 									<div className="overlay"></div>
 									<div className="text">
 										<div className="line"></div>
@@ -479,7 +505,7 @@ been able to provide best services for our customers.</p>
 							</div>
 							
 							<div className="item">
-								<div className="testimony-wrap d-flex align-items-stretch" style={{backgroundImage: 'url(react/images/testimony-4.jpg)'}}>
+								<div className="testimony-wrap d-flex align-items-stretch" style={{backgroundImage: ''}}>
 									<div className="overlay"></div>
 									<div className="text">
 										<div className="line"></div>
@@ -567,67 +593,21 @@ been able to provide best services for our customers.</p>
 			</div>
 		</section>
 		
-
-		<section className="ftco-appointment ftco-section img" style={{backgroundImage: 'url(react/images/bg_2.jpg)'}}>
-			<div className="overlay"></div>
-			<div className="container">
-				<div className="row">
-					<div className="col-md-6 half ftco-animate">
-						<h2 className="mb-4">Don't hesitate to contact us</h2>
-						<form  onSubmit={this.submit}>
-							<div className="row">
-								<div className="col-md-6">
-									<div className="form-group">
-									<input type="text" className="form-control" name="name" id="name" placeholder="Name"  value={name} onChange={this.changeHandler}/>
-									</div>
-								</div>
-								<div className="col-md-6">
-									<div className="form-group">
-									<input type="text" className="form-control" name="name" id="name" placeholder="Name"  value={name} onChange={this.changeHandler}/>
-										
-									</div>
-								</div>
-								<div className="col-md-12">
-									<div className="form-group">
-										<div className="form-field">
-											<div className="select-wrap">
-												<div className="icon"><span className="fa fa-chevron-down"></span></div>
-												
-											</div>
-										</div>
-									</div>
-								</div>
-
-							
-								<div className="col-md-12">
-									<div className="form-group">
-										<textarea name="" id="" cols="30" rows="7" className="form-control" placeholder="Message" value={message} 
-										onChange={this.changeHandler}></textarea>
-									</div>
-								</div>
-								<div className="col-md-12">
-									<div className="form-group">
-										<button type="submit"   className="btn btn-primary py-3 px-4"  > <h2>Submit</h2></button>
-									</div>
-								</div>
-							</div>
-						</form>
-					</div>
-				</div>
-			</div>
-		</section>
+		
+		
 		<div id="ftco-loader" className="show fullscreen"><svg className="circular" width="48px" height="48px"><Circle className="path-bg" cx="24" cy="24" r="22" fill="none" strokeWidth-="4" stroke="#eeeeee"/><Circle className="path" cx="24" cy="24" r="22" fill="none" strokeWidth="4" strokeMiterlimit="10" stroke="#F96D00"/></svg></div>
 		
 		<div className="icon-bar">
-  <a href="https://www.facebook.com/abcsolutionco" className="facebook"><i className="fa fa-facebook"></i></a>
+  <a href="https://www.facebook.com/DigiWebco/" className="facebook"><i className="fa fa-facebook"></i></a>
   <a href="https://twitter.com/home" className="twitter"><i className="fa fa-twitter"></i></a>
   <a href="https://github.com/Faizan465" className="google"><i className="fa fa-github"></i></a>
   <a href="https://www.linkedin.com/company/68905967/admin/" className="linkedin"><i className="fa fa-linkedin"></i></a>
  
 </div>
 <div style={{position: 'fixed', right: '3px', bottom: '180px', cursor: 'pointer', fontFamily:'Arial,Helvetica,sans-serif', zIndex: '999'}}><a href="whatsapp://send?phone=+918383049524&amp;text=Hi, I contacted you through your  DigiWeb Solution"><p className="wa__btn_popup_icon"><img src="https://www.apollofertility.com/international-patient/img/whatsapp-icon.png" alt="" width='50' height='50'/></p></a></div>
-			
+<div>
 
+</div>
 			</div>
 		
 	

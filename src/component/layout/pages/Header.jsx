@@ -6,31 +6,41 @@ class Header extends  Component {
     render() { 
         return ( 
 				<div>
-
+					<br/>
+					<br/>
+					<br/>
+					<br/>
+	
          	<div className="wrap">
-			<div className="container">
+			<div className="container" >
 				<div className="row justify-content-between">
 					<div className="col-12 col-md d-flex align-items-center">
 					<h1><p className="mb-0 phone"><span className="mailus">Phone no:</span><a href="tel:8383049524">8383049524</a> or <span className="mailus">email us:</span> <a href="mailto:mf496860@gmail.com">mf496860@gmail.com</a></p></h1>
-					
+
 					</div>
 					<div className="col-12 col-md d-flex justify-content-md-end">
 						<div className="social-media">
 							<p className="mb-0 d-flex">
-								<a href="https://www.facebook.com/abcsolutionco" className="d-flex align-items-center justify-content-center"><span className="fa fa-facebook"><i className="sr-only">Facebook</i></span></a>
+								<a href="https://www.facebook.com/DigiWebco/
+								
+								
+								
+								
+								" className="d-flex align-items-center justify-content-center"><span className="fa fa-facebook"><i className="sr-only">Facebook</i></span></a>
 								<a href="https://twitter.com/home" className="d-flex align-items-center justify-content-center"><span className="fa fa-twitter"><i className="sr-only">Twitter</i></span></a>
-								<a href="https://www.linkedin.com/company/68905967/admin/" className="d-flex align-items-center justify-content-center"><span className="fa fa-linkldn"><i className="sr-only">Linkldn</i></span></a>
+							
 							</p>
+							
 						</div>
 					</div>
 				</div>
 			</div>
             
 		</div>
-       
-        <nav className="navbar navbar-expand-lg navbar-dark ftco_navbar bg-dark ftco-navbar-light" id="ftco-navbar">
+		
+        <nav className="navbar navbar-expand-lg navbar-dark ftco_navbar bg-dark ftco-navbar-light" id="ftco-navbar" >
 			<div className="container">
-				<Link className="navbar-brand" to="/home"><img src="images/digiweb.png" style={{height:'30px',width:'60px',marginLeft:'50%'}}/></Link>
+				<Link className="navbar-brand" to="/home"><img src="images/imges.png" style={{height:'30px',width:'60px',marginLeft:'50%'}}/></Link>
 				<button className="navbar-toggler" type="button" data-toggle="collapse" data-target="#ftco-nav" aria-controls="ftco-nav" aria-expanded="false" aria-label="Toggle navigation">
 					<span className="oi oi-menu"></span> Menu
 				</button>

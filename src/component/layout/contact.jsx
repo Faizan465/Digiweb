@@ -11,10 +11,10 @@ class Contact extends Component {
 super(props);
 this.state={
 	id:'',
+	name: '',
 	email: '',
-	firstname: '',
-	lastname: '',
-	avatar: ''
+	subject: '',
+	message: ''
 
 
 }
@@ -32,7 +32,7 @@ this.setState( {[e.target.name]: e.target.value})
 	submit = e => {
 e.preventDefault()
 console.log(this.state)
-axios.post('https://reqres.in/api/users',this.state).then(response => {
+axios.post('https://localhost:5001/api/Submit',this.state).then(response => {
 console.log(response)
 
 })
@@ -43,21 +43,20 @@ console.log(response)
 	}
 	
     render() { 
-const { id, email, firstname, lastname,avatar} = this.state
+const { id, name, email, subject,message} = this.state
 		
         return ( 
             <div>
             
-			<section className="hero-wrap hero-wrap-2" style={{backgroundImage: 'url(images/image_5.jpg)'}} >
+			<section className="hero-wrap hero-wrap-2" style={{backgroundImage: 'url(images/conta.jpg)'}} >
 		
 		<div className="container">
 			<div className="row no-gutters slider-text align-items-end justify-content-center">
 				<div className="col-md-9 ftco-animate pb-5 text-center">
 					<h1 className="mb-3 bread">Contact us</h1>
 					<p className="breadcrumbs"><span className="mr-2"><Link to="/home">Home <i className="fa fa-chevron-right"></i></Link></span> <span>Contact us <i className="fa fa-chevron-right"></i></span></p>
-					<br/>
-					<br/>
-					<br/>
+				
+       
 				</div>
 			</div>
 		</div>
@@ -119,34 +118,29 @@ const { id, email, firstname, lastname,avatar} = this.state
 										<div className="row">
 											<div className="col-md-6">
 												<div className="form-group">
-													<label className="label" for="name">Full Name</label>
-													<input type="text" className="form-control" name="name" id="id" placeholder="Name"  value={id} onChange={this.changeHandler}/>
+													<label className="label" for="name">name</label>
+													<input type="text" className="form-control" name="name" id="name" placeholder="Name"  value={name} onChange={this.changeHandler}/>
 												</div>
 											</div>
 											<div className="col-md-6"> 
 												<div className="form-group">
-													<label className="label" for="email">Email Address</label>
+													<label className="label" for="email">email</label>
 													<input type="email" className="form-control" name="email" id="email"  value={email}  placeholder="Email" onChange={this.changeHandler}/>
 												</div>
 											</div>
 											<div className="col-md-12">
 												<div className="form-group">
 													<label className="label" for="subject">Subject</label>
-													<input type="text" className="form-control" name="subject" id="firstname" value={firstname} placeholder="Subject" onChange={this.changeHandler}/>
+													<input type="text" className="form-control" name="subject" id="subject" value={subject} placeholder="Subject" onChange={this.changeHandler}/>
 												</div>
 											</div>
 											<div className="col-md-12">
 												<div className="form-group">
 													<label className="label" for="#">Message</label>
-													<textarea name="message" name="message" className="form-control" id="lastname" cols="30" rows="4" placeholder="Message" value={lastname} onChange={this.changeHandler}></textarea>
+													<textarea name="message" name="message" className="form-control" id="email" cols="30" rows="4" placeholder="Message" value={message} onChange={this.changeHandler}></textarea>
 												</div>
 											</div>
-											<div className="col-md-12">
-												<div className="form-group">
-													<label className="label" for="#">Message</label>
-													<textarea name="message" name="message" className="form-control" id="avatar" cols="30" rows="4" placeholder="Message" value={avatar} onChange={this.changeHandler}></textarea>
-												</div>
-											</div>
+										
 											
 											<div className="col-md-12">
 												<div className="form-group">
@@ -159,9 +153,9 @@ const { id, email, firstname, lastname,avatar} = this.state
 								</div>
 							</div>
 							
-							<div className="col-md-5 order-md-first d-flex align-items-stretch">
-							<div id="map" class="map">
-							<iframe width="450" height="530" id="gmap_canvas" src="https://maps.google.com/maps?q=SIGRA%20VARANASI&t=&z=13&ie=UTF8&iwloc=&output=embed" frameborder="0" scrolling="no" marginheight="0" marginwidth="0"></iframe><a href="https://www.whatismyip-address.com/nordvpn-coupon/" style={{position:'relative',textAlign:'right',height:'150px',width:'50px',overflow:'hidden',background:'none!important',height:'500px',width:'600px'}}></a>
+							<div className="col-md-5 order-md-first d-flex align-items-stretch" >
+							<div id="map" class="map" style={{marginRight:'60%'}}>
+							<iframe width="450" height="560" id="gmap_canvas" src="https://maps.google.com/maps?q=SIGRA%20VARANASI&t=&z=13&ie=UTF8&iwloc=&output=embed" frameborder="0" scrolling="no" marginheight="0" marginwidth="0"></iframe><a href="https://www.whatismyip-address.com/nordvpn-coupon/" style={{position:'relative',textAlign:'right',height:'150px',width:'50px',overflow:'hidden',background:'none!important',height:'500px',width:'600px'}}></a>
 							</div>
 							</div>
 						</div>

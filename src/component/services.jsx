@@ -9,15 +9,20 @@ class Services extends Component {
         return ( 
             <div >
 			
-<section className="hero-wrap hero-wrap-2" style={{backgroundImage: 'url(images/bg3.jpg)'}} data-stellar-background-ratio="0.5">
+<section className="hero-wrap hero-wrap-2" style={{backgroundImage: 'url(images/img.png)',height:'80%'}}>
+<div className ="overlay"></div>
   <div className="container">
     <div className="row no-gutters slider-text align-items-end justify-content-center">
       <div className="col-md-9 ftco-animate pb-5 text-center">
         <h1 className="mb-3 bread">Services</h1>
         <p className="breadcrumbs"><span className="mr-2"><Link to="/home">Home <i className="fa fa-chevron-right"></i></Link></span> <span>Services <i className="fa fa-chevron-right"></i></span></p>
 		<br/>
-		<br/>
-		<br/>
+        <br/>
+        <br/>
+        <br/>
+        <br/>
+        <br/>
+        <br/>
 
       </div>
     </div>
@@ -28,8 +33,8 @@ class Services extends Component {
 		<div className="container">
 			<div className="row justify-content-center pb-5">
 				<div className="col-lg-6 heading-section text-center ftco-animate">
-					<h2 className="mb-4">More than <span>5+</span> years we provide <span>IT Solution</span></h2>
-					<p>With an experience of more than 3+ years and caliber of qualified developers we have
+					<h2 className="mb-4"> <span>Our Services</span></h2>
+					<p>With an experience of more than 5+ years and caliber of qualified developers we have
 been able to provide best services for our customers.</p>
 				</div>
 			</div>
@@ -40,7 +45,7 @@ been able to provide best services for our customers.</p>
 							<span className="flaticon-web-programming"></span>
 						</div>
 						<div className="text">
-							<h3>Web Development</h3>
+							<h3>WebSite Development</h3>
 							<p>Let's define a website that can be rated as user friendly what it needs to have
  Perfect look and feel
  Ease of navigation
@@ -58,7 +63,7 @@ been able to provide best services for our customers.</p>
 							<span className="flaticon-secure"></span>
 						</div>
 						<div className="text">
-							<h3>E-commerce Solutions</h3>
+							<h3> Web & E-commerce Solutions</h3>
 							<p>We help create customer-centric online store using the right platform to power your eCommerce website. We understand this and develop the right design and deployment strategy.</p>
 						</div>
 					</div>
@@ -69,8 +74,8 @@ been able to provide best services for our customers.</p>
 							<span className="flaticon-secure"></span>
 						</div>
 						<div className="text">
-							<h3>Logo Design</h3>
-							<p> Logo design is the process of designing a logo. Branding is the process of building a brand. To be more specific, it is a strategy designed by companies to help people to quickly identify their products .</p>
+							<h3>Enterprise Solutions</h3>
+							<p>We implement solutions to help enterprise bring process, people, and data on one platform. We integrate various information flowing channels to one common platform within an enterprise.</p>
 						</div>
 					</div>
 				</div>
@@ -82,6 +87,17 @@ been able to provide best services for our customers.</p>
 						<div className="text">
 							<h3>SEO</h3>
 							<p> SEO services is leading search engine marketing Company providing quality Search Engine Optimization, Social media, Google sponsor listing and various internet marketing Solutions.</p>
+						</div>
+					</div>
+				</div>
+				<div className="col-md-4">
+					<div className="services-2 text-center">
+						<div className="icon">
+							<span className="flaticon-secure"></span>
+						</div>
+						<div className="text">
+							<h3>Logo Design</h3>
+							<p>Logo design is the process of designing a logo. Branding is the process of building a brand. To be more specific, it is a strategy designed by companies to help people to quickly identify their products .</p>
 						</div>
 					</div>
 				</div>
@@ -179,10 +195,10 @@ been able to provide best services for our customers.</p>
 				<div className="text">
 					<i className="fa fa-bullhorn fa-5x fa fa-briefcase"></i>
 						<p className="item-title">
-							<h3 style={{color:'rgba(31,181,172,.9)'}}>Development Experts</h3>
+							<h3 style={{color:'rgba(31,181,172,.9)'}}> Experts</h3>
 						</p>
 					<p>
-					With an experience of more than 3+ years,Having experts on Website design, Development , E-Commerce .
+					With an experience of more than 5+ years,Having experts on Website design, Development , E-Commerce .
 					</p>
 				</div>
 			</div>

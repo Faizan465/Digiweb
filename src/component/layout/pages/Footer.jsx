@@ -5,18 +5,18 @@ class Footer  extends Component {
     state = {  }
     render() { 
         return (
-           
+			
 				<div>
-               <footer className="ftco-footer ftco-footer-2 ftco-section">
+               <footer className="ftco-footer ftco-footer-2 ftco-section"  >
 			<div className="container">
 				<div className="row mb-5">
 					<div className="col-md">
 						<div className="ftco-footer-widget mb-4">
-							<h2 className="ftco-footer-logo"><img src="images/digiweb.png" style={{height:'40px',width:'60px',marginLeft:'10%',zIndex:'0',backgroundColor:'#05091f'}}/></h2>
+							<h2 className="ftco-footer-logo"><img src="images/imges.png" style={{height:'40px',width:'60px',marginLeft:'10%',zIndex:'0',backgroundColor:'#05091f'}}/></h2>
 							<ul className="ftco-footer-social list-unstyled mt-2">
-								<li className="ftco-animate"><Link to=""><span className="fa fa-twitter"></span></Link></li>
-								<li className="ftco-animate"><Link to=""><span className="fa fa-facebook"></span></Link></li>
-								<li className="ftco-animate"><Link to=""><span className="fa fa-github"></span></Link></li>
+								<li className="ftco-animate"><Link to="https://twitter.com/home"><span className="fa fa-twitter"></span></Link></li>
+								<li className="ftco-animate"><Link to="https://www.facebook.com/DigiWebco/"><span className="fa fa-facebook"></span></Link></li>
+								<li className="ftco-animate"><Link to="https://github.com/Faizan465"><span className="fa fa-github"></span></Link></li>
 							</ul>
 						</div>
 					</div>

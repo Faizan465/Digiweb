@@ -8,13 +8,17 @@ class About extends Component {
         return (
             <div>
 
-<section className="hero-wrap hero-wrap-2" style={{backgroundImage: 'url(images/about.jpg)'}} data-stellar-background-ratio="0.0">
-<div className="overlay"></div>
+<section className="hero-wrap hero-wrap-2" style={{backgroundImage: 'url(images/abt.png)',height:'80%'}} >
+<div className="overlay"> </div>
   <div className="container">
     <div className="row no-gutters slider-text align-items-end justify-content-center">
       <div className="col-md-9 ftco-animate pb-5 text-center">
-        <h1 className="mb-3 bread">About Us</h1>
-        <p className="breadcrumbs"><span className="mr-2"><Link to="/home">Home <i className="fa fa-chevron-right"></i></Link></span> <span>About us <i className="fa fa-chevron-right"></i></span></p>
+        <h1 className="mb-3 bread" >About Us</h1>
+        <p className="breadcrumbs" ><span  className="mr-2"><Link to="/home" >Home <i className="fa fa-chevron-right"></i></Link></span> <span >About us <i className="fa fa-chevron-right"></i></span></p>
+        <br/>
+        <br/>
+        <br/>
+        <br/>
         <br/>
         <br/>
         <br/>
@@ -45,9 +49,9 @@ class About extends Component {
                         <div className="feature-box" >
                             <div className="clearfix">
                                 <div className="iconset">
-                                    <span className="glyphicon glyphicon-cog icon"></span>
+                                    <span className=""></span>
                                 </div>
-                                <div className="feature-content" >
+                                <div className="feature-content" style={{marginRight:'20%'}} >
                                     <h1 >Work with heart</h1>
                                     <p style={{fontSize:'15'}}> Our main objective is to nurture and prosper our clients objectives and to accompalish their needs of some better perception.</p>
                                 </div>
@@ -56,9 +60,9 @@ class About extends Component {
                         <div className="feature-box">
                             <div className="clearfix">
                                 <div className="iconset">
-                                    <span className="glyphicon glyphicon-cog icon"></span>
+                                    <span className=""></span>
                                 </div>
-                                <div className="feature-content">
+                                <div className="feature-content" style={{marginRight:'20%'}}>
                                     <h1>Company Of Professional</h1>
                                     <p style={{fontSize:'15'}}>The very same idea is now a prospering Enterprise  with a team of highly skilled and creative IT professionals and Software developers with an expertise in the field of E-commerce, ERP, Hosting and managing Web Applications and the list goes on and on. It Solution is equipped with a wonderful and passionate team at your service.</p>
                                 </div>
@@ -67,9 +71,9 @@ class About extends Component {
                         <div className="feature-box">
                             <div className="clearfix">
                                 <div className="iconset">
-                                    <span className="glyphicon glyphicon-cog icon"></span>
+                                    <span className=""></span>
                                 </div>
-                                <div className="feature-content">
+                                <div className="feature-content" style={{marginRight:'20%'}}>
                                     <h1>Great support</h1>
                                     <p style={{fontSize:'15'}}>Culture is important to DigiWeb Solution, our company values aren't just paper statements. This is a stimulating and fun place to work. Happy and smart people create better service. Like many providers, we recognise that plain speaking is a key element in your decision-making and ensuring that your technology works for you.</p>
                                 </div>
@@ -103,13 +107,14 @@ class About extends Component {
                         <div className="single-counter text-center">
                             <h2 className="counter"><span>5</span></h2>
                             <p>YEARS OF EXP</p>
+                            <br/>
                         </div>
-                        
+                       
                         <div className="single-counter text-center">
                             <h2 className="counter"><span>50</span></h2>
                             <p>WEBSITES COMPLETED</p>
                         </div>
-                        
+                       
                         <div className="single-counter text-center">
                             <h2 className="counter"><span>5</span></h2>
                             <p>BUSSINESS PARTNER</p>

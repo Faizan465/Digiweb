@@ -1,0 +1,14 @@
+.banner300x250Div {
+ 	text-align:right;
+	position:relative;
+	margin-bottom:20px;
+}
+.banner300x250Div iframe {
+	margin: 0 auto;
+	overflow: hidden;
+	display: table;
+	 
+	border: none;
+}
+
+.banner300x250Div .btn{ margin-right:10px; margin-bottom:10px;}
