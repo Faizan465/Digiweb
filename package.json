@@ -1,5 +1,4 @@
 {
-  "proxy": "https://localhost:5001/api/Submit",
   "homepage": "./",
   "name": "reactappdemo",
   "version": "0.1.0",
