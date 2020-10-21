@@ -7,8 +7,8 @@ class Services extends Component {
     state = {  }
     render() { 
         return ( 
-            <div className ="wrap-12">
-		
+            <div className ="wrap">
+		<div>
 <section className="hero-wrap hero-wrap-2" style={{backgroundImage: 'url(images/img.png)'}}>
 <div className ="overlay"></div>
   <div className="container">
@@ -329,7 +329,7 @@ been able to provide best services for our customers.</p>
 		<br/>
 		</center>
  	</div>
-	
+	</div>
 	
          );
     }

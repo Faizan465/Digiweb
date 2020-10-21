@@ -1,6 +1,6 @@
 import React from 'react';
 import './App.css';
-import {BrowserRouter as Router , Route,Switch,Redirect} from 'react-router-dom' ;
+import {BrowserRouter as Router , Route,Switch} from 'react-router-dom' ;
 import Header from  './component/layout/pages/Header';
 import Home from './component/layout/home';
 import About from './component/about';
@@ -26,7 +26,7 @@ function App() {
 <Route path= "/portfolios" component={Portfolios} />
 <Route path= "/blogs" component={Blogs} />
 <Route path= "/contact"  component={Contact} />
-<Redirect to ="/" />
+
 </Switch>
 <Footer/>
 
