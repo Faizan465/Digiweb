@@ -31,7 +31,7 @@ class Home extends Component {
 			submit = e => {
 		e.preventDefault()
 		console.log(this.state)
-		axios.post('https://localhost:5001/api/Submit',this.state).then(response => {
+		axios.post('https://reqres.in/api/users',this.state).then(response => {
 		console.log(response)
 		
 		})
