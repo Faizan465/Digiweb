@@ -9,12 +9,11 @@ class About extends Component {
             <div>
 
 <section className="hero-wrap hero-wrap-2" style={{backgroundImage: 'url(images/abt.png)'}} >
-<div className="overlay"> </div>
   <div className="container">
     <div className="row no-gutters slider-text align-items-end justify-content-center">
       <div className="col-md-9 ftco-animate pb-5 text-center">
-        <h1 className="mb-3 bread" >About Us</h1>
-        <p className="breadcrumbs" ><span  className="mr-2"><Link to="/home" >Home <i className="fa fa-chevron-right"></i></Link></span> <span >About us <i className="fa fa-chevron-right"></i></span></p>
+        <h1 className="mb-3 bread"   style={{color:'black'}}>About Us</h1>
+        <p className="breadcrumbs" ><span  className="mr-2"><Link to="/home"  style={{color:'black'}} >Home <i className="fa fa-chevron-right"  style={{color:'black'}}></i></Link></span> <span  style={{color:'black'}} >About us <i className="fa fa-chevron-right"></i></span></p>
         <br/>
         <br/>
         <br/>

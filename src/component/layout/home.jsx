@@ -4,7 +4,7 @@ import 'bootstrap/dist/css/bootstrap.min.css';
 import './home.css';
 import axios from 'axios';
 import { Circle } from 'google-maps-react';
-import  './home.js'
+import  './home.js';
 class Home extends Component {		
 			render() { 
 		

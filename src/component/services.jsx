@@ -3,7 +3,7 @@ import './service.css';
 import {Link} from 'react-router-dom';
 import { Button } from 'reactstrap';
 class Services extends Component {
-    state = {  }
+    state = {}
     render() { 
         return ( 
            <div className="wrap">
@@ -15,7 +15,7 @@ class Services extends Component {
     <div className="row no-gutters slider-text align-items-end justify-content-center">
       <div className="col-md-9 ftco-animate pb-5 text-center">
         <h1 className="mb-3 bread"  style={{color:'black'}}>Services</h1>
-        <p className="breadcrumbs"><span className="mr-2"><Link   to="/homes">Home <i className="fa fa-chevron-right" style={{color:'black'}}></i></Link></span> <span style={{color:'black'}}>Services <i className="fa fa-chevron-right" style={{color:'black'}}></i></span></p>
+        <p className="breadcrumbs"><span className="mr-2"><Link  style={{color:'black'}}  to="/homes">Home <i className="fa fa-chevron-right" style={{color:'black'}}></i></Link></span> <span style={{color:'black'}}>Services <i className="fa fa-chevron-right" style={{color:'black'}}></i></span></p>
 		<br/>
         <br/>
         <br/>
@@ -223,82 +223,6 @@ been able to provide best services for our customers.</p>
 <div className="center"></div>
                  <center >    <img src="http://www.flyaway.co.in/images/web-design.png" className="img-responsive"/></center>
                       <div className="space"></div>
-                      
-           
-       
-
-<section className="wrapper">
-            <div className="container" style={{marginRight:'10%'}}>
-               <div className="row align-items-center">
-                  <div className="col-lg-3 col-md-12"></div>
-                  <div className="col-lg-6 col-md-12">
-                     <div className="holderCircle">
-                        <div className="round"></div>
-                        <div className="dotCircle">
-                           <span className="itemDot active itemDot1" data-tab="1">
-                           <i className="fa fa-clock-o"></i>
-                           <span className="forActive"></span>
-                           </span>
-                           <span className="itemDot itemDot2" data-tab="2">
-                           <i className="fa fa-comments"></i>
-                           <span className="forActive"></span>
-                           </span>
-                           <span className="itemDot itemDot3" data-tab="3">
-                           <i className="fa fa-user"></i>
-                           <span className="forActive"></span>
-                           </span>
-                           <span className="itemDot itemDot4" data-tab="4">
-                           <i className="fa fa-tags"></i>
-                           <span className="forActive"></span>
-                           </span>
-                           <span className="itemDot itemDot5" data-tab="5">
-                           <i className="fa fa-upload"></i>
-                           <span className="forActive"></span>
-                           </span>
-                           <span className="itemDot itemDot6" data-tab="6">
-                           <i className="fa fa-briefcase"></i>
-                           <span className="forActive"></span>
-                           </span>
-                        </div>
-                        <div className="contentCircle">
-                           <div className="CirItem title-box active CirItem1">
-                              <h2 className="title"><span>Web Design</span></h2>
-                              <p>Website & Portal Development is very important for any company as a good web page always attracts the viewers.</p>
-                              <i className="fa fa-clock-o"></i>
-                           </div>
-                           
-                           <div className="CirItem title-box CirItem2">
-                              <h2 className="title"><span>Web Development </span></h2>
-                              <p> our web developed services include creation of high quality design/layout creation using Photoshop, PSD to CSS/XHTML, .Net</p>
-                              <i className="fa fa-comments"></i>
-                           </div>
-                           <div className="CirItem title-box CirItem3">
-                              <h2 className="title"><span>E-commerce </span></h2>
-                              <p>We at It Solution develop custom E-commerce websites with a stunning storefront, beautiful product galleries, mobile-optimized and all-in-one management system. </p>
-                              <i className="fa fa-user"></i>
-                           </div>
-                           <div className="CirItem title-box CirItem4">
-                              <h2 className="title"><span>SEO</span></h2>
-                              <p>SEO is basically a methodology of strategies, techniques and tactics used to increase the amount of visitors to a website by obtaining a high ranking placement</p>
-                              <i className="fa fa-tags"></i>
-                           </div>
-                           <div className="CirItem title-box CirItem5">
-                              <h2 className="title"><span> Marketing</span></h2>
-                              <p> Reach your ideal customers on the world's largest professional network. Start now! Generate leads, drive website traffic, and build brand awareness with LinkedIn Ads.</p>
-                              <i className="fa fa-upload"></i>
-                           </div>
-                           <div className="CirItem title-box CirItem6">
-                              <h2 className="title"><span>Support</span></h2>
-                              <p>In today’s modern business environment keeping up to date is essential. Dotsquares offers a range of IT support services that can help you do just that.</p>
-                              <i className="fa fa-briefcase"></i>
-                           </div>
-                        </div>
-                     </div>
-                  </div>
-                  <div className="col-lg-3 col-md-12"></div>
-               </div>
-            </div>
-        </section>
 <div>
 </div>
 	<center>

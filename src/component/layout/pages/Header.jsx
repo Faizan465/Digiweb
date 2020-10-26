@@ -43,7 +43,7 @@ class Header extends  Component {
 	
 				<div className="collapse navbar-collapse" id="ftco-nav">
 					<ul className="navbar-nav ml-auto">
-						<li className="nav-item "><Link to="/homes" className="nav-link">Home</Link></li>
+						<li className="nav-item "><Link to="/" className="nav-link">Home</Link></li>
 						<li className="nav-item"><Link to="/about" className="nav-link">About</Link></li>
 						<li className="nav-item dropdown dmenu">
             <Link className="nav-link dropdown-toggle" to="/services" id="navbardrop" data-toggle="dropdown">
@@ -59,7 +59,7 @@ class Header extends  Component {
 						<li className="nav-item"><Link to="/portfolios" className="nav-link">Portfolio</Link></li>
 						<li className="nav-item"><Link to="/blogs" className="nav-link">Blog</Link></li>
 						<li className="nav-item"><Link to="/contact" className="nav-link">Contact us</Link></li>
-						<li className="nav-item cta"><Link to="/contact" className="nav-link" style={{borderRadius:'5%'}}>Get a quote</Link></li>
+						<li className="nav-item cta"><Link to="/contact" className="nav-link" style={{borderRadius:'5%'}}>Book A Demo</Link></li>
 	
 					</ul>
 				</div>

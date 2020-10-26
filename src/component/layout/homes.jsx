@@ -94,7 +94,7 @@ been able to provide best services for our customers.</p>
 							<span className="flaticon-web-programming"></span>
 						</div>
 						<div className="text">
-							<h3>WebSite Development</h3>
+							<h3 style={{color:'black'}}>WebSite Development</h3>
 							<p>Let's define a website that can be rated as user friendly what it needs to have
  Perfect look and feel
  Ease of navigation
@@ -112,7 +112,7 @@ been able to provide best services for our customers.</p>
 							<span className="flaticon-secure"></span>
 						</div>
 						<div className="text">
-							<h3> Web & E-commerce Solutions</h3>
+							<h3 style={{color:'black'}}> Web & E-commerce Solutions</h3>
 							<p>We help create customer-centric online store using the right platform to power your eCommerce website. We understand this and develop the right design and deployment strategy.</p>
 						</div>
 					</div>
@@ -123,7 +123,7 @@ been able to provide best services for our customers.</p>
 							<span className="flaticon-secure"></span>
 						</div>
 						<div className="text">
-							<h3>Enterprise Solutions</h3>
+							<h3 style={{color:'black'}} >Enterprise Solutions</h3>
 							<p>We implement solutions to help enterprise bring process, people, and data on one platform. We integrate various information flowing channels to one common platform within an enterprise.</p>
 						</div>
 					</div>
@@ -134,7 +134,7 @@ been able to provide best services for our customers.</p>
 							<span className="flaticon-secure"></span>
 						</div>
 						<div className="text">
-							<h3>SEO</h3>
+							<h3 style={{color:'black'}}>SEO</h3>
 							<p> SEO services is leading search engine marketing Company providing quality Search Engine Optimization, Social media, Google sponsor listing and various internet marketing Solutions.</p>
 						</div>
 					</div>
@@ -145,7 +145,7 @@ been able to provide best services for our customers.</p>
 							<span className="flaticon-secure"></span>
 						</div>
 						<div className="text">
-							<h3>Logo Design</h3>
+							<h3 style={{color:'black'}}>Logo Design</h3>
 							<p>Logo design is the process of designing a logo. Branding is the process of building a brand. To be more specific, it is a strategy designed by companies to help people to quickly identify their products .</p>
 						</div>
 					</div>
