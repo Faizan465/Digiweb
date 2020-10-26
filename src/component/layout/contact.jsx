@@ -108,7 +108,7 @@ const { id, email, first_name, last_name,avatar} = this.state
 								</div>
 							</div>
 						</div>
-						<div className="row no-gutters" >
+						<div className="row no-gutters" style={{marginRight:"-10%"}} >
 							<div className="col-md-7">
 								<div className="contact-wrap w-100 p-md-5 p-4">
 									<h1 className="mb-4">Contact Us</h1>
@@ -155,8 +155,8 @@ const { id, email, first_name, last_name,avatar} = this.state
 							</div>
 							
 							<div className="col-md-5 order-md-first d-flex align-items-stretch" >
-							<div id="map" class="map" style={{marginRight:'1000%'}}>
-							<iframe width="450" height="650" id="gmap_canvas" src="https://maps.google.com/maps?q=SIGRA%20VARANASI&t=&z=13&ie=UTF8&iwloc=&output=embed" frameborder="0" scrolling="no" marginheight="0" marginwidth="0"></iframe><a href="https://www.whatismyip-address.com/nordvpn-coupon/" style={{position:'relative',textAlign:'right',height:'150px',width:'50px',overflow:'hidden',background:'none!important',height:'500px',width:'600px'}}></a>
+							<div id="map" class="map" style={{marginRight:'50px'}}>
+							<iframe width="450" height="550" id="gmap_canvas" src="https://maps.google.com/maps?q=SIGRA%20VARANASI&t=&z=13&ie=UTF8&iwloc=&output=embed" frameborder="0" scrolling="no" marginheight="0" marginwidth="0" ></iframe><a href="https://www.whatismyip-address.com/nordvpn-coupon/" style={{position:'relative',textAlign:'right',height:'150px',width:'50px',overflow:'hidden',background:'none!important',height:'500px',width:'600px'}}></a>
 							</div>
 							</div>
 						</div>

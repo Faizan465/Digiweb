@@ -35,7 +35,7 @@ class About extends Component {
                         <h1 className="aboutus-title">About Us</h1>
                         <p style={{fontSize:'15'}} className="aboutus-text">In a world of Profit-driven business, we at DigiWeb Solution work following a customer driven business model. Back in 2018 DigiWeb Solution was just an idea, an idea of building an enterprise that will not only provide a hassle free and cost-effective IT service but also providing our customers with an unmatched Quality Service. With this idea, we started and worked our way bit by bit to make this idea a reality Culture is important to DigiWeb Solution, our company values aren't just paper statements. This is a stimulating and fun place to work. Happy and smart people create better service. Like many providers, we recognise that plain speaking is a key element in your decision-making and ensuring that your technology works for you.</p>
                        
-                        <Link className="aboutus-more" to="/home">read more</Link>
+                        <Link className="aboutus-more" to="/about">read more</Link>
                     </div>
                 </div>
                 <div className="col-md-3 col-sm-6 col-xs-12">
@@ -85,7 +85,7 @@ class About extends Component {
 <br/>
 <br/>
  
-<center>
+
             <div className="aboutus-area">
     <div className="container">
         <div className="row">
@@ -132,7 +132,9 @@ class About extends Component {
         </div>
     </div>
 </div>
-</center>
+
+
+
          </div>  
             </div>
            

@@ -229,7 +229,7 @@ been able to provide best services for our customers.</p>
 					<div className="col-md-3 d-flex align-self-stretch ftco-animate">
 						<div className="media block-6 services d-block">
 							<div className="line"></div>
-							<div className="icon"><span className="flaticon-shoppingcart"></span></div>
+							<div className="icon"><span className="flaticon-stats"></span></div>
 							<div className="media-body">
 								<h3 className="heading mb-3">E-commerce </h3>
 								<p>We implement solutions to help enterprise bring process, people, and data on one platform. We integrate various information flowing channels to one common platform within an enterprise.</p>
@@ -253,7 +253,7 @@ been able to provide best services for our customers.</p>
 							<div className="line"></div>
 							<div className="icon"><span className="flaticon-presentation"></span></div>
 							<div className="media-body">
-								<h3 className="heading mb-3">Digital Marketing</h3>
+								<h3 className="heading mb-3">SEO</h3>
 								<p>SEO services is leading search engine marketing Company providing quality Search Engine Optimization, Social media, Google sponsor listing and various internet marketing Solutions.</p>
 							</div>
 						</div>      
