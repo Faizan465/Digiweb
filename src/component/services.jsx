@@ -3,10 +3,10 @@ import './service.css';
 import {Link} from 'react-router-dom';
 import { Button } from 'reactstrap';
 class Services extends Component {
-    state = {}
+    state = {  }
     render() { 
         return ( 
-           <div className="wrap">
+          
 		<div >
 		<div >
 <section className="hero-wrap hero-wrap-2" style={{backgroundImage: 'url(images/img.png)'}}>
@@ -15,7 +15,7 @@ class Services extends Component {
     <div className="row no-gutters slider-text align-items-end justify-content-center">
       <div className="col-md-9 ftco-animate pb-5 text-center">
         <h1 className="mb-3 bread"  style={{color:'black'}}>Services</h1>
-        <p className="breadcrumbs"><span className="mr-2"><Link  style={{color:'black'}}  to="/homes">Home <i className="fa fa-chevron-right" style={{color:'black'}}></i></Link></span> <span style={{color:'black'}}>Services <i className="fa fa-chevron-right" style={{color:'black'}}></i></span></p>
+        <p className="breadcrumbs"><span className="mr-2"><Link to="/homes"  style={{color:'black'}}>Home <i className="fa fa-chevron-right"  style={{color:'black'}}></i></Link></span> <span  style={{color:'black'}}>Services <i className="fa fa-chevron-right"></i></span></p>
 		<br/>
         <br/>
         <br/>
@@ -45,7 +45,7 @@ been able to provide best services for our customers.</p>
 							<span className="flaticon-web-programming"></span>
 						</div>
 						<div className="text">
-							<h3 style={{color:'white'}}>WebSite Development</h3>
+							<h3>WebSite Development</h3>
 							<p>Let's define a website that can be rated as user friendly what it needs to have
  Perfect look and feel
  Ease of navigation
@@ -63,7 +63,7 @@ been able to provide best services for our customers.</p>
 							<span className="flaticon-secure"></span>
 						</div>
 						<div className="text">
-							<h3 style={{color:'white'}}> Web & E-commerce Solutions</h3>
+							<h3> Web & E-commerce Solutions</h3>
 							<p>We help create customer-centric online store using the right platform to power your eCommerce website. We understand this and develop the right design and deployment strategy.</p>
 						</div>
 					</div>
@@ -74,7 +74,7 @@ been able to provide best services for our customers.</p>
 							<span className="flaticon-secure"></span>
 						</div>
 						<div className="text">
-							<h3 style={{color:'white'}}>Enterprise Solutions</h3>
+							<h3>Enterprise Solutions</h3>
 							<p>We implement solutions to help enterprise bring process, people, and data on one platform. We integrate various information flowing channels to one common platform within an enterprise.</p>
 						</div>
 					</div>
@@ -85,7 +85,7 @@ been able to provide best services for our customers.</p>
 							<span className="flaticon-secure"></span>
 						</div>
 						<div className="text">
-							<h3 style={{color:'white'}}>SEO</h3>
+							<h3>SEO</h3>
 							<p> SEO services is leading search engine marketing Company providing quality Search Engine Optimization, Social media, Google sponsor listing and various internet marketing Solutions.</p>
 						</div>
 					</div>
@@ -96,7 +96,7 @@ been able to provide best services for our customers.</p>
 							<span className="flaticon-secure"></span>
 						</div>
 						<div className="text">
-							<h3 style={{color:'white'}}>Logo Design</h3>
+							<h3>Logo Design</h3>
 							<p>Logo design is the process of designing a logo. Branding is the process of building a brand. To be more specific, it is a strategy designed by companies to help people to quickly identify their products .</p>
 						</div>
 					</div>
@@ -220,11 +220,19 @@ been able to provide best services for our customers.</p>
 	</div>
 </div>
 
+<br/>
+<br/>
 <div className="center"></div>
                  <center >    <img src="http://www.flyaway.co.in/images/web-design.png" className="img-responsive"/></center>
                       <div className="space"></div>
-<div>
-</div>
+                      
+           
+       
+
+
+
+<br/>
+<br/>
 	<center>
         <div className="col-lg-4"> 
 		
@@ -315,7 +323,7 @@ been able to provide best services for our customers.</p>
 			</footer> 
  	</div>
 	 </div>
-	</div>
+	
          );
     }
 }
