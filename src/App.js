@@ -1,36 +1,36 @@
 import React from 'react';
 import './App.css';
-import {BrowserRouter as Router , Route} from 'react-router-dom' ;
+import {BrowserRouter as Router,Redirect,Route,Switch } from "react-router-dom";
 import Header from  './component/layout/pages/Header';
-import Home from './component/layout/home';
+import Homes from './component/layout/homes';
 import About from './component/about';
 import Services from './component/services';
 import Portfolios from  './component/portfolios';
 import Blogs from './component/blogs';
 import Contact from './component/layout/contact';
 import Footer from  './component/layout/pages/Footer';
-import contact from './component/layout/contact';
 
-function App() {
+
+function App(){
 
   return (
-<div className="App">
-   <Router> 
-     <Header/>
 
+    <Router>
     
-     <Route exact path= "/" component={Home} /> 
-<Route path= "/about" component={About} />
-<Route path= "/services" component={Services}/>
-<Route path= "/portfolios" component={Portfolios} />
-<Route path= "/blogs" component={Blogs} />
-<Route path= "/contact"  component={Contact} />
+<Header/>
+<Switch>
 
+<Route   path= "/homes"  exact component={Homes} /> 
+<Route  path= "/about" component={About} />
+<Route exact path= "/services" component={Services}/>
+<Route exact path= "/portfolios" component={Portfolios}/>
+<Route  exact path= "/blogs" component={Blogs}/>
+<Route exact path= "/contact"  component={Contact}/>
+<Route   path= "/" component={Homes} /> 
+</Switch>
 <Footer/>
-
-
 </Router>
-</div>
+
 
   );
   

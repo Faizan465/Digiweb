@@ -6,7 +6,9 @@ class Portfolio  extends Component {
     state = {  }
     render() { 
         return ( 
+           
             <div>
+        
 				<br/>
 				<br/>
 				<br/>
@@ -79,59 +81,54 @@ class Portfolio  extends Component {
 		</section>
 		
 
-		<section className="ftco-appointment ftco-section img" style={{backgroundImage: 'url(react/images/bg_2.jpg)'}}>
-			<div className="overlay"></div>
-			<div className="container">
-				<div className="row">
-					<div className="col-md-6 half ftco-animate">
-						<h2 className="mb-4">Don't hesitate to contact us</h2>
-						<form Action="" className="appointment" method="post">
-							<div className="row">
-								<div className="col-md-6">
-									<div className="form-group">
-										<input type="text" className="form-control" placeholder="Your Name"/>
-									</div>
-								</div>
-								<div className="col-md-6">
-									<div className="form-group">
-										<input type="text" className="form-control" placeholder="Email"/>
-									</div>
-								</div>
-								<div className="col-md-12">
-									<div className="form-group">
-										<div className="form-field">
-											<div className="select-wrap">
-												<div className="icon"><span className="fa fa-chevron-down"></span></div>
-												<select name="" id="" className="form-control">
-													<option value="">Services</option>
-													<option value="">Web Design</option>
-													<option value="">Web Development</option>
-													<option value="">E-commerce Development</option>
-													<option value="">Digital Marketing</option>
-													
-												</select>
-											</div>
-										</div>
-									</div>
-								</div>
-
-								
-								<div className="col-md-12">
-									<div className="form-group">
-										<textarea name="" id="" cols="30" rows="7" className="form-control" placeholder="Message"></textarea>
-									</div>
-								</div>
-								<div className="col-md-12">
-									<div className="form-group">
-										<button type="submit" value="Send message" className="btn btn-primary py-3 px-4"> <h2>Submit</h2></button>
-									</div>
-								</div>
-							</div>
-						</form>
-					</div>
-				</div>
-			</div>
-		</section>
+		<section className="testimonial_section">
+            <div className="container">
+                <div className="row">
+                    <div className="col-lg-7">
+                       <div className="about_content">
+                            <div className="background_layer"></div>
+                            <div className="layer_content">
+                                <div className="section_title">
+                                    <h5>CLIENTS</h5>
+                                    <h2>Happy with<strong>Customers & Clients</strong></h2>
+                                    <div className="heading_line"><span></span></div>
+                                    <p>If you need any industrial solution we are available for you.</p>
+                                </div>
+                                <Link to="/contact">Contact Us<i className="icofont-long-arrow-right"></i></Link>
+                            </div>
+                        </div>
+                    </div>
+                    <div className="col-lg-5">
+                        <div className="testimonial_box">
+                            <div className="testimonial_container">
+                                <div className="background_layer"></div>
+                                <div className="layer_content">
+                                    <div className="testimonial_owlCarousel owl-carousel">
+                                        <div className="testimonials"> 
+                                            <div className="testimonial_content">
+                                                <div className="testimonial_caption">
+                                                    <h6>Er Mohammad Faizan</h6>
+                                                    <span>Software Developer</span>
+                                                </div>
+                                                <p>Team with X-gen excellent knowledge and skill in Developed  program and strategies .This company can achieve optimal level of performance and accomplissement </p>
+                                            </div>
+                                            <div className="images_box">
+                                                <div className="testimonial_img">
+                                                    <img className="img-center" src="https://cdn.pixabay.com/photo/2017/08/30/17/27/business-woman-2697954_960_720.jpg" alt="images not found"/>
+                                                </div>
+                                            </div>
+                                        </div>
+                                      </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+       <script>
+           
+       </script>
 
             
             </div>

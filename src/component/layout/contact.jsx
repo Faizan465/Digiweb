@@ -19,9 +19,6 @@ this.state={
 
 }
 
-
-
-
 	}
 
 	changeHandler = (e) => {
@@ -105,7 +102,7 @@ const { id, email, first_name, last_name,avatar} = this.state
 										<span className="fa fa-globe"></span>
 									</div>
 									<div className="text">
-										<p><span>Website</span> <a href="#">www.digiweb.com</a></p>
+										<p><span>Website</span> <a href="#">www.digiwebsolutions.tech</a></p>
 									</div>
 								</div>
 							</div>
@@ -160,8 +157,8 @@ const { id, email, first_name, last_name,avatar} = this.state
 							</div>
 							
 							<div className="col-md-5 order-md-first d-flex align-items-stretch" >
-							<div id="map" class="map" style={{marginRight:'60%'}}>
-							<iframe width="450" height="480" id="gmap_canvas" src="https://maps.google.com/maps?q=SIGRA%20VARANASI&t=&z=13&ie=UTF8&iwloc=&output=embed" frameborder="0" scrolling="no" marginheight="0" marginwidth="0"></iframe><a href="https://www.whatismyip-address.com/nordvpn-coupon/" style={{position:'relative',textAlign:'right',height:'150px',width:'50px',overflow:'hidden',background:'none!important',height:'500px',width:'600px'}}></a>
+							<div id="map" class="map" style={{marginRight:'80%'}}>
+							<iframe width="450" height="650" id="gmap_canvas" src="https://maps.google.com/maps?q=SIGRA%20VARANASI&t=&z=13&ie=UTF8&iwloc=&output=embed" frameborder="0" scrolling="no" marginheight="0" marginwidth="0"></iframe><a href="https://www.whatismyip-address.com/nordvpn-coupon/" style={{position:'relative',textAlign:'right',height:'150px',width:'50px',overflow:'hidden',background:'none!important',height:'500px',width:'600px'}}></a>
 							</div>
 							</div>
 						</div>

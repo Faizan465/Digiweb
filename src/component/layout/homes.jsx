@@ -19,11 +19,13 @@ class Home extends Component {
 				<div className="col-md-8 ftco-animate mt-5 pt-md-5" data-scrollax=" properties: { translateY: '70%' }">
 					<div className="row">
 						<div className="col-md-7">
+							
 							<br/>
 							<br/>
-							<br/>
-							<br/>
-						
+                            <br/>
+                            <br/>
+                            <br/>
+                            <br/>
 						</div>
 					</div>
 					<center>
@@ -107,7 +109,7 @@ been able to provide best services for our customers.</p>
 				<div className="col-md-4">
 					<div className="services-2 text-center">
 						<div className="icon">
-							<span className="flaticon-shopping art"></span>
+							<span className="flaticon-secure"></span>
 						</div>
 						<div className="text">
 							<h3> Web & E-commerce Solutions</h3>
@@ -118,7 +120,7 @@ been able to provide best services for our customers.</p>
             <div className="col-md-4">
 					<div className="services-2 text-center">
 						<div className="icon">
-							<span className="flaticon-"></span>
+							<span className="flaticon-secure"></span>
 						</div>
 						<div className="text">
 							<h3>Enterprise Solutions</h3>
@@ -227,7 +229,7 @@ been able to provide best services for our customers.</p>
 					<div className="col-md-3 d-flex align-self-stretch ftco-animate">
 						<div className="media block-6 services d-block">
 							<div className="line"></div>
-							<div className="icon"><span className="flaticon-stats"></span></div>
+							<div className="icon"><span className="flaticon-shoppingcart"></span></div>
 							<div className="media-body">
 								<h3 className="heading mb-3">E-commerce </h3>
 								<p>We implement solutions to help enterprise bring process, people, and data on one platform. We integrate various information flowing channels to one common platform within an enterprise.</p>

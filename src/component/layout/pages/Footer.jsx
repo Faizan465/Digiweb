@@ -14,9 +14,9 @@ class Footer  extends Component {
 						<div className="ftco-footer-widget mb-4">
 							<h2 className="ftco-footer-logo"><img src="images/imges.png" style={{height:'40px',width:'60px',marginLeft:'10%',zIndex:'0',backgroundColor:'#05091f'}}/></h2>
 							<ul className="ftco-footer-social list-unstyled mt-2">
-								<li className="ftco-animate"><Link to="https://twitter.com/home"><span className="fa fa-twitter"></span></Link></li>
-								<li className="ftco-animate"><Link to="https://www.facebook.com/DigiWebco/"><span className="fa fa-facebook"></span></Link></li>
-								<li className="ftco-animate"><Link to="https://github.com/Faizan465"><span className="fa fa-github"></span></Link></li>
+								<li className="ftco-animate"><a href="https://twitter.com/home"><span className="fa fa-twitter"></span></a></li>
+								<li className="ftco-animate"><a href="https://www.facebook.com/DigiWebco/"><span className="fa fa-facebook"></span></a></li>
+								<li className="ftco-animate"><a href="https://github.com/Faizan465"><span className="fa fa-github"></span></a></li>
 							</ul>
 						</div>
 					</div>
@@ -53,7 +53,7 @@ class Footer  extends Component {
 								<ul>
 									<li><span className="icon fa fa-map marker"></span><span className="text"> Sigra Varanasi</span></li>
 									<li> <Link to="tel:8383049524"><span className="icon fa fa-phone"></span><span className="text">+91 8383049524</span></Link></li>
-									<li><Link to="mailto:mf496860@gmail.com"><span className="icon fa fa-paper-plane pr-4"></span><span className="text">mf49686@gmail.com</span></Link></li>
+									<li><Link to="mailto:contact@digiwebsolutions.tech"><span className="icon fa fa-paper-plane pr-4"></span><span className="text">contact@digiwebsolutions.tech</span></Link></li>
 								</ul>
 							</div>
 						</div>

@@ -11,7 +11,7 @@ class Header extends  Component {
 			<div className="container" >
 				<div className="row justify-content-between">
 					<div className="col-12 col-md d-flex align-items-center">
-					<h1><p className="mb-0 phone"><i className="fa fa-phone"></i><a href="tel:8383049524">8383049524</a> or <i className="fa fa-envelope-o"></i> <a href="mailto:mf496860@gmail.com">mf496860@gmail.com</a></p></h1>
+					<h1><p className="mb-0 phone"><i className="fa fa-phone"></i><a href="tel:8383049524">8383049524</a> or <i className="fa fa-envelope-o"></i> <a href="mailto:contact@digiwebsolutions.tech">contact@digiwebsolutions.tech</a></p></h1>
 
 					</div>
 					<div className="col-12 col-md d-flex justify-content-md-end">
@@ -36,14 +36,14 @@ class Header extends  Component {
 		
         <nav className="navbar navbar-expand-lg navbar-dark ftco_navbar bg-dark ftco-navbar-light" id="ftco-navbar" >
 			<div className="container">
-				<Link className="navbar-brand" to="/home"><img src="images/imges.png" style={{height:'30px',width:'50px',marginLeft:'50%'}}/></Link>
+				<Link className="navbar-brand" to="/homes"><img src="images/imges.png" style={{height:'30px',width:'50px',marginLeft:'50%'}}/></Link>
 				<button className="navbar-toggler" type="button" data-toggle="collapse" data-target="#ftco-nav" aria-controls="ftco-nav" aria-expanded="false" aria-label="Toggle navigation">
 					<span className="oi oi-menu"></span> Menu
 				</button>
 	
 				<div className="collapse navbar-collapse" id="ftco-nav">
 					<ul className="navbar-nav ml-auto">
-						<li className="nav-item "><Link to="/home" className="nav-link">Home</Link></li>
+						<li className="nav-item "><Link to="/homes" className="nav-link">Home</Link></li>
 						<li className="nav-item"><Link to="/about" className="nav-link">About</Link></li>
 						<li className="nav-item dropdown dmenu">
             <Link className="nav-link dropdown-toggle" to="/services" id="navbardrop" data-toggle="dropdown">

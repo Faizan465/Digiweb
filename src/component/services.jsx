@@ -1,21 +1,21 @@
 import React, { Component } from 'react';
 import './service.css';
-import './service.js';
 import {Link} from 'react-router-dom';
 import { Button } from 'reactstrap';
 class Services extends Component {
     state = {  }
     render() { 
         return ( 
-            <div className ="wrap">
-		<div>
+           <div className="wrap">
+		<div >
+		<div >
 <section className="hero-wrap hero-wrap-2" style={{backgroundImage: 'url(images/img.png)'}}>
-<div className ="overlay"></div>
+
   <div className="container">
     <div className="row no-gutters slider-text align-items-end justify-content-center">
       <div className="col-md-9 ftco-animate pb-5 text-center">
-        <h1 className="mb-3 bread">Services</h1>
-        <p className="breadcrumbs"><span className="mr-2"><Link to="/home">Home <i className="fa fa-chevron-right"></i></Link></span> <span>Services <i className="fa fa-chevron-right"></i></span></p>
+        <h1 className="mb-3 bread"  style={{color:'black'}}>Services</h1>
+        <p className="breadcrumbs"><span className="mr-2"><Link   to="/homes">Home <i className="fa fa-chevron-right" style={{color:'black'}}></i></Link></span> <span style={{color:'black'}}>Services <i className="fa fa-chevron-right" style={{color:'black'}}></i></span></p>
 		<br/>
         <br/>
         <br/>
@@ -45,7 +45,7 @@ been able to provide best services for our customers.</p>
 							<span className="flaticon-web-programming"></span>
 						</div>
 						<div className="text">
-							<h3>WebSite Development</h3>
+							<h3 style={{color:'white'}}>WebSite Development</h3>
 							<p>Let's define a website that can be rated as user friendly what it needs to have
  Perfect look and feel
  Ease of navigation
@@ -63,7 +63,7 @@ been able to provide best services for our customers.</p>
 							<span className="flaticon-secure"></span>
 						</div>
 						<div className="text">
-							<h3> Web & E-commerce Solutions</h3>
+							<h3 style={{color:'white'}}> Web & E-commerce Solutions</h3>
 							<p>We help create customer-centric online store using the right platform to power your eCommerce website. We understand this and develop the right design and deployment strategy.</p>
 						</div>
 					</div>
@@ -74,7 +74,7 @@ been able to provide best services for our customers.</p>
 							<span className="flaticon-secure"></span>
 						</div>
 						<div className="text">
-							<h3>Enterprise Solutions</h3>
+							<h3 style={{color:'white'}}>Enterprise Solutions</h3>
 							<p>We implement solutions to help enterprise bring process, people, and data on one platform. We integrate various information flowing channels to one common platform within an enterprise.</p>
 						</div>
 					</div>
@@ -85,7 +85,7 @@ been able to provide best services for our customers.</p>
 							<span className="flaticon-secure"></span>
 						</div>
 						<div className="text">
-							<h3>SEO</h3>
+							<h3 style={{color:'white'}}>SEO</h3>
 							<p> SEO services is leading search engine marketing Company providing quality Search Engine Optimization, Social media, Google sponsor listing and various internet marketing Solutions.</p>
 						</div>
 					</div>
@@ -96,7 +96,7 @@ been able to provide best services for our customers.</p>
 							<span className="flaticon-secure"></span>
 						</div>
 						<div className="text">
-							<h3>Logo Design</h3>
+							<h3 style={{color:'white'}}>Logo Design</h3>
 							<p>Logo design is the process of designing a logo. Branding is the process of building a brand. To be more specific, it is a strategy designed by companies to help people to quickly identify their products .</p>
 						</div>
 					</div>
@@ -328,9 +328,70 @@ been able to provide best services for our customers.</p>
 		<br/>
 		<br/>
 		</center>
+		<footer className="ftco-footer ftco-footer-2 ftco-section"  >
+			<div className="container">
+				<div className="row mb-5">
+					<div className="col-md">
+						<div className="ftco-footer-widget mb-4">
+							<h2 className="ftco-footer-logo"><img src="images/imges.png" style={{height:'40px',width:'60px',marginLeft:'10%',zIndex:'0',backgroundColor:'#05091f'}}/></h2>
+							<ul className="ftco-footer-social list-unstyled mt-2">
+								<li className="ftco-animate"><a href="https://twitter.com/home"><span className="fa fa-twitter"></span></a></li>
+								<li className="ftco-animate"><a href="https://www.facebook.com/DigiWebco/"><span className="fa fa-facebook"></span></a></li>
+								<li className="ftco-animate"><a href="https://github.com/Faizan465"><span className="fa fa-github"></span></a></li>
+							</ul>
+						</div>
+					</div>
+					<div className="col-md">
+						<div className="ftco-footer-widget mb-4 ml-md-5">
+							<h2 className="ftco-heading-2">Explore</h2>
+							<ul className="list-unstyled">
+								<li><Link to="/about" className="py-2 d-block">About</Link></li>
+								<li><Link to="/contact" className="py-2 d-block">Contact</Link></li>
+								<li><Link to="/services" className="py-2 d-block">What We Do</Link></li>
+								
+								
+								<li><Link to="" className="py-2 d-block">Call Us</Link></li>
+							</ul>
+						</div>
+					</div>
+					<div className="col-md">
+						<div className="ftco-footer-widget mb-4">
+							<h2 className="ftco-heading-2">Legal</h2>
+							<ul className="list-unstyled">
+							
+								<li><Link to="/blog" className="py-2 d-block">Blog</Link></li>
+								<li><Link to="/home" className="py-2 d-block">Privacy &amp; Policy</Link></li>
+								<li><Link to="/home" className="py-2 d-block">Terms &amp; Conditions</Link></li>
+								
+								<li><Link to="/contact" className="py-2 d-block">Contact</Link></li>
+							</ul>
+						</div>
+					</div>
+					<div className="col-md">
+						<div className="ftco-footer-widget mb-4">
+							<h2 className="ftco-heading-2">Have a Questions?</h2>
+							<div className="block-23 mb-3">
+								<ul>
+									<li><span className="icon fa fa-map marker"></span><span className="text"> Sigra Varanasi</span></li>
+									<li> <Link to="tel:8383049524"><span className="icon fa fa-phone"></span><span className="text">+91 8383049524</span></Link></li>
+									<li><Link to="mailto:contact@digiwebsolutions.tech"><span className="icon fa fa-paper-plane pr-4"></span><span className="text">contact@digiwebsolutions.tech</span></Link></li>
+								</ul>
+							</div>
+						</div>
+					</div>
+				</div>
+				<div className="row">
+					<div className="col-md-12 text-center">
+						<p>
+							Copyright & copy;<script>document.write(new Date().getFullYear());</script> All rights reserved |Developed <i className="fa fa-heart" aria-hidden="true"></i>by  <Link to="" target="_blank">DigiWeb Solution</Link>
+							</p>
+						</div>
+					</div>
+				</div>
+			</footer> 
  	</div>
+	 </div>
 	</div>
-	
          );
     }
 }
