@@ -94,6 +94,7 @@ const { id, email, first_name, last_name,avatar} = this.state
 										<span className="fa fa-paper-plane"></span>
 									</div>
 									<div className="text">
+									<br/>
 										<p><span>Email:</span> <a href="mailto:mf496860@gmail.com.com">contact@digiwebsolutions.tech</a></p>
 									</div>
 								</div>
