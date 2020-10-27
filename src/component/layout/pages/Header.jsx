@@ -6,7 +6,6 @@ class Header extends  Component {
     render() { 
         return ( 
 				<div>
-	
          	<div className="wrap">
 			<div className="container" >
 				<div className="row justify-content-between">
@@ -18,10 +17,6 @@ class Header extends  Component {
 						<div className="social-media">
 							<p className="mb-0 d-flex">
 								<a href="https://www.facebook.com/DigiWebco/
-								
-								
-								
-								
 								" className="d-flex align-items-center justify-content-center"><span className="fa fa-facebook"><i className="sr-only">Facebook</i></span></a>
 								<a href="https://twitter.com/home" className="d-flex align-items-center justify-content-center"><span className="fa fa-twitter"><i className="sr-only">Twitter</i></span></a>
 							
@@ -43,7 +38,7 @@ class Header extends  Component {
 	
 				<div className="collapse navbar-collapse" id="ftco-nav">
 					<ul className="navbar-nav ml-auto">
-						<li className="nav-item "><Link to="/" className="nav-link">Home</Link></li>
+						<li className="nav-item "><Link to="/homes" className="nav-link">Home</Link></li>
 						<li className="nav-item"><Link to="/about" className="nav-link">About</Link></li>
 						<li className="nav-item dropdown dmenu">
             <Link className="nav-link dropdown-toggle" to="/services" id="navbardrop" data-toggle="dropdown">

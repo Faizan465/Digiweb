@@ -1,6 +1,5 @@
 import React, { Component } from 'react';
 import './blog.css';
-
 import {Link} from 'react-router-dom';
 class Portfolio  extends Component {
     state = {  }
@@ -107,7 +106,7 @@ class Portfolio  extends Component {
                                         <div className="testimonials"> 
                                             <div className="testimonial_content">
                                                 <div className="testimonial_caption">
-                                                    <h6>Er Mohammad Faizan</h6>
+                                                    <h6>Faisal Farooqui</h6>
                                                     <span>Software Developer</span>
                                                 </div>
                                                 <p>Team with X-gen excellent knowledge and skill in Developed  program and strategies .This company can achieve optimal level of performance and accomplissement </p>

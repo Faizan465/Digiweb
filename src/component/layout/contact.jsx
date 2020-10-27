@@ -72,6 +72,7 @@ const { id, email, first_name, last_name,avatar} = this.state
 										<span className="fa fa-map-marker"></span>
 									</div>
 									<div className="text">
+									<br/>
 										<p><span>Address:</span> Sigra, Varanasi</p>
 									</div>
 								</div>
@@ -82,6 +83,7 @@ const { id, email, first_name, last_name,avatar} = this.state
 										<span className="fa fa-phone"></span>
 									</div>
 									<div className="text">
+									<br/>
 										<p><span>Phone:</span> <a href="tel:8383049524">+ 91 8383049524</a></p>
 									</div>
 								</div>
@@ -92,7 +94,7 @@ const { id, email, first_name, last_name,avatar} = this.state
 										<span className="fa fa-paper-plane"></span>
 									</div>
 									<div className="text">
-										<p><span>Email:</span> <a href="mailto:mf496860@gmail.com.com">mf496860@gmail.com</a></p>
+										<p><span>Email:</span> <a href="mailto:mf496860@gmail.com.com">contact@digiwebsolutions.tech</a></p>
 									</div>
 								</div>
 							</div>
@@ -103,13 +105,13 @@ const { id, email, first_name, last_name,avatar} = this.state
 									</div>
 									<div className="text">
 									
-										<p><span>Website</span> <a href="#">digiwebsolutions.tech</a></p>
+										<p><span>Website</span> <a href="#">www.digiwebsolutions.tech</a></p>
 									</div>
 								</div>
 							</div>
 						</div>
-						<div className="row no-gutters" style={{marginRight:"-10%"}} >
-							<div className="col-md-7">
+						<div className="row no-gutters"  >
+							<div className="col-md-6">
 								<div className="contact-wrap w-100 p-md-5 p-4">
 									<h1 className="mb-4">Contact Us</h1>
 								<form onSubmit={this.submit}>
@@ -118,7 +120,7 @@ const { id, email, first_name, last_name,avatar} = this.state
 								
 											<div className="col-md-12">
 												<div className="form-group">
-													<label className="label" for="name">email</label>
+								      					<label className="label" for="name">email</label>
 													<input type="text" className="form-control" name="email" id="email" placeholder="Name"  value={email} onChange={this.changeHandler}/>
 												</div>
 											</div>
@@ -144,7 +146,7 @@ const { id, email, first_name, last_name,avatar} = this.state
 											
 											<div className="col-md-12">
 												<div className="form-group">
-													<button  type="submit"   className="btn btn-primary  px-5 py-4"><h4>Submit</h4></button>
+													<button  type="submit"   className="btn btn-primary  px-2py-3"><h4>Submit</h4></button>
 													<div className="submitting"></div>
 												</div>
 											</div>
@@ -155,8 +157,8 @@ const { id, email, first_name, last_name,avatar} = this.state
 							</div>
 							
 							<div className="col-md-5 order-md-first d-flex align-items-stretch" >
-							<div id="map" class="map" style={{marginRight:'50px'}}>
-							<iframe width="450" height="550" id="gmap_canvas" src="https://maps.google.com/maps?q=SIGRA%20VARANASI&t=&z=13&ie=UTF8&iwloc=&output=embed" frameborder="0" scrolling="no" marginheight="0" marginwidth="0" ></iframe><a href="https://www.whatismyip-address.com/nordvpn-coupon/" style={{position:'relative',textAlign:'right',height:'150px',width:'50px',overflow:'hidden',background:'none!important',height:'500px',width:'600px'}}></a>
+							<div id="map" class="map" >
+							<iframe width="350" height="550" id="gmap_canvas" src="https://maps.google.com/maps?q=SIGRA%20VARANASI&t=&z=13&ie=UTF8&iwloc=&output=embed" frameborder="0" scrolling="no" marginheight="0" marginwidth="0" ></iframe><a href="https://www.whatismyip-address.com/nordvpn-coupon/" style={{position:'relative',textAlign:'right',height:'150px',width:'50px',overflow:'hidden',background:'none!important',height:'500px',width:'600px'}}></a>
 							</div>
 							</div>
 						</div>

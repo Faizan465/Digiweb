@@ -1,6 +1,6 @@
 
-import $ from 'jquery'; 
-const $ = window.$;
+
+
 $(".video-play").on('click', function(e) {
     e.preventDefault(); 
     var vidWrap = $(this).parent(),

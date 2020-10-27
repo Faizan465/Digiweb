@@ -62,7 +62,7 @@ class Footer  extends Component {
 				<div className="row">
 					<div className="col-md-12 text-center">
 						<p>
-							Copyright & copy;<script>document.write(new Date().getFullYear());</script> All rights reserved |Developed <i className="fa fa-heart" aria-hidden="true"></i>by  <Link to="" target="_blank">DigiWeb Solution</Link>
+						Copyright ©  2020 DigiWeb Solutions  <script>document.write(new Date().getFullYear());</script>All Rights Reserved. |Developed <i className="fa fa-heart" aria-hidden="true"></i>by  <Link to="" target="_blank">DigiWeb Solution</Link>
 							</p>
 						</div>
 					</div>
