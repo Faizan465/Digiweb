@@ -94,8 +94,8 @@ const { id, email, first_name, last_name,avatar} = this.state
 										<span className="fa fa-paper-plane"></span>
 									</div>
 									<div className="text">
-									<br/>
-										<p><span>Email:</span> <a href="mailto:mf496860@gmail.com.com">contact@digiwebsolutions.tech</a></p>
+							<br/>
+										<p><span>Email:</span> <a href="mailto:contact@digiwebsolutions.tech">contact@digiwebsolutions.tech</a></p>
 									</div>
 								</div>
 							</div>
@@ -105,7 +105,7 @@ const { id, email, first_name, last_name,avatar} = this.state
 										<span className="fa fa-globe"></span>
 									</div>
 									<div className="text">
-									
+									<br/>
 										<p><span>Website</span> <a href="#">www.digiwebsolutions.tech</a></p>
 									</div>
 								</div>
