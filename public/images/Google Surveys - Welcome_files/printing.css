@@ -1,0 +1,10 @@
+pt-copyright-footer,
+pt-header {
+  display: none !important;
+}
+
+.page-container,
+.pt-container {
+  overflow: visible !important;
+  position: inherit !important;
+}
