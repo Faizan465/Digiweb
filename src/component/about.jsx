@@ -91,7 +91,7 @@ class About extends Component {
         <div className="row">
             <div className="col-xs-12">
             <div className="col-lg-6 col-md-6 col-sm-6 col-xs-12">    
-                <div className="aboutus-image float-left hidden-sm"><img src="images/" alt=""/></div>
+                <div className="aboutus-image float-left hidden-sm"><img src="images/why.jpg" alt=""/></div>
                 </div>
             <div className="col-md-6 col-sm-6 col-xs-12">
                 <div className="aboutus-content ">
@@ -115,12 +115,12 @@ class About extends Component {
                         </div>
                        
                         <div className="single-counter text-center">
-                            <h2 className="counter"><span>5</span></h2>
+                            <h2 className="counter"><span>3</span></h2>
                             <p>BUSSINESS PARTNER</p>
                         </div>
                         
                         <div className="single-counter text-center">
-                            <h2 className="counter"><span>100</span></h2>
+                            <h2 className="counter"><span>50</span></h2>
                             <p>CLIENTS</p>
                         </div>
                         </div>

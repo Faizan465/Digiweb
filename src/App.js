@@ -20,13 +20,13 @@ function App(){
 <Header/>
 <Switch>
 
-<Route   path= "/homes"  exact component={Homes} /> 
-<Route  path= "/about" component={About} />
+<Route  exact path= "/homes"  exact component={Homes} /> 
+<Route   exact path= "/about" component={About} />
 <Route exact path= "/services" component={Services}/>
 <Route exact path= "/portfolios" component={Portfolios}/>
 <Route  exact path= "/blogs" component={Blogs}/>
 <Route exact path= "/contact"  component={Contact}/>
-<Route   path= "/" component={Homes} /> 
+<Route   exact path= "/" component={Homes} /> 
 </Switch>
 <Footer/>
 </Router>
