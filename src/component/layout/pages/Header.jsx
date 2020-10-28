@@ -31,7 +31,7 @@ class Header extends  Component {
 		
         <nav className="navbar navbar-expand-lg navbar-dark ftco_navbar bg-dark ftco-navbar-light" id="ftco-navbar" >
 			<div className="container">
-				<Link className="navbar-brand" to="/homes"><img src="images/imges.png" style={{height:'30px',width:'50px',marginLeft:'50%'}}/></Link>
+				<Link className="navbar-brand" to="/homes"><img src="images/imges.png" style={{height:'30px',width:'50px',marginLeft:'60%'}}/></Link>
 				<button className="navbar-toggler" type="button" data-toggle="collapse" data-target="#ftco-nav" aria-controls="ftco-nav" aria-expanded="false" aria-label="Toggle navigation">
 					<span className="oi oi-menu"></span> Menu
 				</button>
