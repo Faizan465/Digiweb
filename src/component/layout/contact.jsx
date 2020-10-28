@@ -2,7 +2,8 @@ import React, { Component } from 'react';
 import {Link} from 'react-router-dom';
 import {Map, InfoWindow, Marker, GoogleApiWrapper} from 'google-maps-react';
 import axios from 'axios';
-import ReCAPTCHA from "react-google-recaptcha";
+import Recaptcha from 'react-recaptcha';
+
 
 
 class Contact extends Component {
@@ -19,6 +20,9 @@ this.state={
 
 }
 
+	}
+	recapchaloaded(){
+		console.log('recaptcha successfully loaded')
 	}
 
 	changeHandler = (e) => {
@@ -143,6 +147,15 @@ const { id, email, first_name, last_name,avatar} = this.state
 													<textarea name="text" name="avatar" className="form-control" id="avatar" cols="30" rows="4" placeholder="Message" value={avatar} onChange={this.changeHandler}></textarea>
 												</div>
 											</div>
+											<div className="col-md-12">
+												<div className="form-group">
+												<Recaptcha
+    sitekey="6LeQatwZAAAAAIvoWk-IkT9NwMVkcymyRUalRYK3"
+    render="explicit"
+    onloadCallback={this.recapchaloaded()}
+  />,
+												</div>
+											</div>
 										
 											
 											<div className="col-md-12">
@@ -159,7 +172,7 @@ const { id, email, first_name, last_name,avatar} = this.state
 							
 							<div className="col-md-5 order-md-first d-flex align-items-stretch" >
 							<div id="map" class="map" >
-							<iframe width="350" height="550" id="gmap_canvas" src="https://maps.google.com/maps?q=SIGRA%20VARANASI&t=&z=13&ie=UTF8&iwloc=&output=embed" frameborder="0" scrolling="no" marginheight="0" marginwidth="0" ></iframe><a href="https://www.whatismyip-address.com/nordvpn-coupon/" style={{position:'relative',textAlign:'right',height:'150px',width:'50px',overflow:'hidden',background:'none!important',height:'500px',width:'600px'}}></a>
+							<iframe width="350" height="600" id="gmap_canvas" src="https://maps.google.com/maps?q=SIGRA%20VARANASI&t=&z=13&ie=UTF8&iwloc=&output=embed" frameborder="0" scrolling="no" marginheight="0" marginwidth="0" ></iframe><a href="https://www.whatismyip-address.com/nordvpn-coupon/" style={{position:'relative',textAlign:'right',height:'150px',width:'50px',overflow:'hidden',background:'none!important',height:'500px',width:'600px'}}></a>
 							</div>
 							</div>
 						</div>
