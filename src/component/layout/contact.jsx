@@ -110,7 +110,7 @@ const { id, email, first_name, last_name,avatar} = this.state
 									</div>
 									<div className="text">
 									<br/>
-										<p><span>Website</span> <a href="#">www.digiwebsolutions.tech</a></p>
+										<p><span>Website</span> <a href="http://www.digiwebsolutions.tech/">www.digiwebsolutions.tech</a></p>
 									</div>
 								</div>
 							</div>
