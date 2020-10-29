@@ -52,8 +52,8 @@ class Footer  extends Component {
 							<div className="block-23 mb-3">
 								<ul>
 									<li><span className="icon fa fa-map marker"></span><span className="text"> Sigra Varanasi</span></li>
-									<li> <Link to="tel:8383049524"><span className="icon fa fa-phone"></span><span className="text">+91 8383049524</span></Link></li>
-									<li><Link to="mailto:contact@digiwebsolutions.tech"><span className="icon fa fa-paper-plane pr-4"></span><span className="text">contact@digiwebsolutions.tech</span></Link></li>
+									<li> <a href="tel:8383049524"><span className="icon fa fa-phone"></span><span className="text">+91 8383049524</span></a></li>
+									<li><a href="mailto:contact@digiwebsolutions.tech"><span className="icon fa fa-paper-plane pr-4"></span><span className="text">contact@digiwebsolutions.tech</span></a></li>
 								</ul>
 							</div>
 						</div>
