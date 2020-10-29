@@ -53,6 +53,8 @@
      <link href="https://fonts.googleapis.com/css?family=Merriweather:400,900,900i" rel="stylesheet"/>
   <!-- End Google Tag Manager -->
    <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css"/>
+   <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css"/>
+<link href="https://fonts.googleapis.com/css?family=Merriweather:400,900,900i" rel="stylesheet"/>
    <!-- Global site tag (gtag.js) - Google Analytics -->
 <script async src="https://www.googletagmanager.com/gtag/js?id=UA-125662033-2"></script>
 <script>
@@ -65,17 +67,23 @@
 
   </head>
     <body>
+      <a id="button"></a>
+     
+    
+     
       <!-- Google Tag Manager (noscript) -->
 
   <!-- End Google Tag Manager (noscript) -->
-      <a id="button"></a>
+     
       <noscript>You need to enable JavaScript to run this app.</noscript>
       <div id="root">
-        
+       
       
       </div>
      <!-- Global site tag (gtag.js) - Google Analytics -->
+    
 
+    </script>
       <script type="text/javascript">
         var Tawk_API=Tawk_API||{}, Tawk_LoadStart=new Date();
         (function(){
@@ -87,7 +95,7 @@
         s0.parentNode.insertBefore(s1,s0);
         })();
         </script>
-     
+    
      
 <!--Start of Tawk.to Script-->
 
@@ -119,7 +127,24 @@
   
 
 
+<script>
+  var btn = $('#button');
 
+$(window).scroll(function() {
+if ($(window).scrollTop() > 300) {
+btn.addClass('show');
+} else {
+btn.removeClass('show');
+}
+});
+
+btn.on('click', function(e) {
+e.preventDefault();
+$('html, body').animate({scrollTop:0}, '300');
+});
+
+
+</script>
 
 
 
