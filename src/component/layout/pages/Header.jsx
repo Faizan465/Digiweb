@@ -23,6 +23,7 @@ class Header extends  Component {
 							</p>
 							
 						</div>
+						<div class='pm-button'><a href='https://www.payumoney.com/sandbox/paybypayumoney/#/48973B0A48C12B446137B6287A2D57A9'><img src='https://www.payumoney.com/media/images/payby_payumoney/new_buttons/21.png' /></a></div> 
 					</div>
 				</div>
 			</div>

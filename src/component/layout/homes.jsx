@@ -12,7 +12,7 @@ class Home extends Component {
 
 	<div>
 		
-	<div className="hero-wrap js-smallheight" style={{backgroundImage: 'url(images/wec.png)' }}>
+	<div className="hero-wrap js-smallheight" style={{backgroundImage: 'url(images/bg8.jpg)' }}>
 		<div className="overlay"> </div>
 		<div className="container">
 			<div className="row no-gutters slider-text js-smallheight align-items-center" data-scrollax-parent="true">
