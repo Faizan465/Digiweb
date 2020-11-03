@@ -1,6 +1,7 @@
 import React, { Component } from 'react';
 import {Link} from 'react-router-dom';
 import 'bootstrap/dist/css/bootstrap.min.css';
+import './footer.css';
 class Footer  extends Component {
     state = {  }
     render() { 
@@ -19,6 +20,7 @@ class Footer  extends Component {
 								<li className="ftco-animate"><a href="https://github.com/Faizan465"><span className="fa fa-github"></span></a></li>
 							</ul>
 						</div>
+						
 					</div>
 					<div className="col-md">
 						<div className="ftco-footer-widget mb-4 ml-md-5">
@@ -59,6 +61,40 @@ class Footer  extends Component {
 						</div>
 					</div>
 				</div>
+				<div class="container"  >
+	<div class="row"  style={{marginRight:'200px'}}>
+		<div class="paymentCont">
+						
+						<div class="paymentWrap">
+							<div class="btn-group paymentBtnGroup btn-group-justified" data-toggle="buttons">
+					            <label class="btn paymentMethod active">
+					            	<div class="method visa"></div>
+					                <input type="radio" name="options" checked/> 
+					            </label>
+					            <label class="btn paymentMethod">
+					            	<div class="method master-card"></div>
+					                <input type="radio" name="options"/> 
+					            </label>
+					            <label class="btn paymentMethod">
+				            		<div class="method amex"></div>
+					                <input type="radio" name="options"/>
+					            </label>
+					             <label class="btn paymentMethod">
+				             		<div class="method vishwa"></div>
+					                <input type="radio" name="options"/> 
+					            </label>
+					            <label class="btn paymentMethod">
+				            		<div class="method ez-cash"></div>
+					                <input type="radio" name="options"/> 
+					            </label>
+					         
+					        </div>        
+						</div>
+						
+					</div>
+		
+	</div>
+</div>
 				<div className="row">
 					<div className="col-md-12 text-center">
 						<p>
@@ -67,6 +103,7 @@ class Footer  extends Component {
 						</div>
 					</div>
 				</div>
+				
 			</footer> 
 			
 			</div>

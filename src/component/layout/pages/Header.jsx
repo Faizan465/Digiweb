@@ -8,6 +8,9 @@ class Header extends  Component {
 				<div>
          	<div className="wrap">
 			<div className="container" >
+
+
+
 				<div className="row justify-content-between">
 					<div className="col-12 col-md d-flex align-items-center">
 					<h1><p className="mb-0 phone"><i className="fa fa-phone"></i><a href="tel:8383049524">8383049524</a> or <i className="fa fa-envelope-o"></i> <a href="mailto:contact@digiwebsolutions.tech">contact@digiwebsolutions.tech</a></p></h1>
@@ -23,7 +26,7 @@ class Header extends  Component {
 							</p>
 							
 						</div>
-						<div class='pm-button'><a href='https://www.payumoney.com/sandbox/paybypayumoney/#/48973B0A48C12B446137B6287A2D57A9'><img src='https://www.payumoney.com/media/images/payby_payumoney/new_buttons/21.png' /></a></div> 
+						<div class='pm-button'><a href='https://www.payumoney.com/paybypayumoney/#/761F01E9032E7A24B1497731717CF741'><img src='https://www.payumoney.com/media/images/payby_payumoney/new_buttons/21.png' /></a></div> 
 					</div>
 				</div>
 			</div>
@@ -55,7 +58,7 @@ class Header extends  Component {
 						<li className="nav-item"><Link to="/portfolios" className="nav-link">Portfolio</Link></li>
 						<li className="nav-item"><Link to="/blogs" className="nav-link">Blog</Link></li>
 						<li className="nav-item"><Link to="/contact" className="nav-link">Contact us</Link></li>
-						<li className="nav-item cta"><Link to="/contact" className="nav-link" style={{borderRadius:'5%'}}>Book A Demo</Link></li>
+						<li className="nav-item cta"><a href="https://www.payumoney.com/paybypayumoney/#/E822165F42495553EEF844CA19ED356B" className="nav-link" style={{borderRadius:'5%'}}>Book A Demo</a></li>
 	
 					</ul>
 				</div>
