@@ -20,12 +20,6 @@ class Home extends Component {
 					<div className="row">
 						<div className="col-md-7">
 							
-							<br/>
-							<br/>
-                            <br/>
-                            <br/>
-                            <br/>
-                            <br/>
 						</div>
 					</div>
 					<center>
