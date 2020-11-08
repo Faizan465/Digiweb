@@ -27,7 +27,7 @@ class Home extends Component {
 					
 					<center>
 				<center>
-					<h1  className="mb-4" data-scrollax="properties: { translateY: '80%', opacity: 0 }"></h1></center>
+					<h1  className="mb-4" data-scrollax="properties: { translateY: '80%', opacity: 0 }">Welcome To DigiWeb Solution</h1></center>
 					<p >< Link  to="/about"><button className="button px-1 py-1" style={{marginLeft:'10%'}}><span> Read More </span></button></Link></p>
 					</center>
 					

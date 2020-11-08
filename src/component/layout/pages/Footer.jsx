@@ -97,7 +97,7 @@ class Footer  extends Component {
 	</div>
 </div>
 <GooglePayButton
-  environment="TEST"
+  environment="PRODUCTION"
   paymentRequest={{
     apiVersion: 2,
     apiVersionMinor: 0,
@@ -111,7 +111,7 @@ class Footer  extends Component {
         tokenizationSpecification: {
           type: 'PAYMENT_GATEWAY',
           parameters: {
-            gateway: 'gateway name',
+            gateway: 'PayU',
           },
         },
       },
@@ -124,8 +124,8 @@ class Footer  extends Component {
       totalPriceStatus: 'FINAL',
       totalPriceLabel: 'Total',
       totalPrice: '100.00',
-      currencyCode: 'RS',
-      countryCode: 'IND',
+      currencyCode: 'USD',
+      countryCode: 'US',
     },
   }}
   onLoadPaymentData={paymentRequest => {
