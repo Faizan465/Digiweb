@@ -4,8 +4,6 @@ import {Map, InfoWindow, Marker, GoogleApiWrapper} from 'google-maps-react';
 import axios from 'axios';
 import Recaptcha from 'react-recaptcha';
 
-
-
 class Contact extends Component {
 	
 	constructor(props){

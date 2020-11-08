@@ -72,6 +72,10 @@ namespace reactappdemo
             app.UseHttpMethodOverride();
             app.UseAuthentication();
             app.UseMvcWithDefaultRoute();
+            app.UseDeveloperExceptionPage();
+            app.UseMvcWithDefaultRoute();
+            app.UseCookiePolicy();
+            
            
             app.UseMvc(routes =>
             {

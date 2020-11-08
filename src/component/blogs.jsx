@@ -1,6 +1,7 @@
 import React, { Component } from 'react';
 import './blog.css';
 import {Link} from 'react-router-dom';
+
 class Portfolio  extends Component {
     state = {  }
     render() { 

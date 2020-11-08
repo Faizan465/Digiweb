@@ -2,6 +2,7 @@ import React, { Component } from 'react';
 import {Link} from 'react-router-dom';
 import 'bootstrap/dist/css/bootstrap.min.css';
 import './footer.css';
+import GooglePayButton from '@google-pay/button-react';
 class Footer  extends Component {
     state = {  }
     render() { 
@@ -95,6 +96,42 @@ class Footer  extends Component {
 		
 	</div>
 </div>
+<GooglePayButton
+  environment="TEST"
+  paymentRequest={{
+    apiVersion: 2,
+    apiVersionMinor: 0,
+    allowedPaymentMethods: [
+      {
+        type: 'CARD',
+        parameters: {
+          allowedAuthMethods: ['PAN_ONLY', 'CRYPTOGRAM_3DS'],
+          allowedCardNetworks: ['MASTERCARD', 'VISA'],
+        },
+        tokenizationSpecification: {
+          type: 'PAYMENT_GATEWAY',
+          parameters: {
+            gateway: 'gateway name',
+          },
+        },
+      },
+    ],
+    merchantInfo: {
+      merchantId: 'BCR2DN6TWPJJRSJT',
+      merchantName: 'DigiWeb Solutions',
+    },
+    transactionInfo: {
+      totalPriceStatus: 'FINAL',
+      totalPriceLabel: 'Total',
+      totalPrice: '100.00',
+      currencyCode: 'RS',
+      countryCode: 'IND',
+    },
+  }}
+  onLoadPaymentData={paymentRequest => {
+    console.log('Success', paymentRequest);
+  }}
+/>
 				<div className="row">
 					<div className="col-md-12 text-center">
 						<p>

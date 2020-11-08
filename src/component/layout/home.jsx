@@ -5,6 +5,7 @@ import './home.css';
 import axios from 'axios';
 import { Circle } from 'google-maps-react';
 import  './home.js';
+
 class Home extends Component {		
 			render() { 
 		
@@ -12,22 +13,21 @@ class Home extends Component {
 
 	<div>
 		
-	<div className="hero-wrap js-smallheight" style={{backgroundImage: 'url(images/wec.png)' }}>
+	<div className="hero-wrap js-fullheight" style={{backgroundImage: 'url(images/wec.png)' }}>
 		<div className="overlay"> </div>
 		<div className="container">
-			<div className="row no-gutters slider-text js-smallheight align-items-center" data-scrollax-parent="true">
+			<div className="row no-gutters slider-text js-fullheight align-items-center" data-scrollax-parent="true">
+				
 				<div className="col-md-8 ftco-animate mt-5 pt-md-5" data-scrollax=" properties: { translateY: '70%' }">
+					
 					<div className="row">
 						<div className="col-md-7">
-							<br/>
-							<br/>
-							<br/>
-							<br/>
-						
 						</div>
 					</div>
+					
 					<center>
-				<center><h1  className="mb-4" data-scrollax="properties: { translateY: '80%', opacity: 0 }">Welcome To DigiWeb Solution</h1></center>
+				<center>
+					<h1  className="mb-4" data-scrollax="properties: { translateY: '80%', opacity: 0 }"></h1></center>
 					<p >< Link  to="/about"><button className="button px-1 py-1" style={{marginLeft:'10%'}}><span> Read More </span></button></Link></p>
 					</center>
 					

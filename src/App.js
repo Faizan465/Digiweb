@@ -11,6 +11,9 @@ import Contact from './component/layout/contact';
 import Footer from  './component/layout/pages/Footer';
 
 
+
+
+
 function App(){
 
   return (
