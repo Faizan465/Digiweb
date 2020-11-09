@@ -17,19 +17,13 @@ class Home extends Component {
 		<div className="overlay"> </div>
 		<div className="container">
 			<div className="row no-gutters slider-text js-fullheight align-items-center" data-scrollax-parent="true">
-				
 				<div className="col-md-8 ftco-animate mt-5 pt-md-5" data-scrollax=" properties: { translateY: '70%' }">
-					
 					<div className="row">
 						<div className="col-md-7">
+							
+						
 						</div>
 					</div>
-					
-					<center>
-				<center>
-					<h1  className="mb-4" data-scrollax="properties: { translateY: '80%', opacity: 0 }">Welcome To DigiWeb Solution</h1></center>
-					<p >< Link  to="/about"><button className="button px-1 py-1" style={{marginLeft:'10%'}}><span> Read More </span></button></Link></p>
-					</center>
 					
 				</div>
 			</div>
