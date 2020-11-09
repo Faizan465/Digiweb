@@ -17,7 +17,7 @@ import Footer from  './component/layout/pages/Footer';
 function App(){
 
   return (
-
+<div className="App">
     <Router>
     
 <Header/>
@@ -33,7 +33,7 @@ function App(){
 </Switch>
 <Footer/>
 </Router>
-
+</div>
 
   );
   

@@ -3,9 +3,13 @@ import {Link} from 'react-router-dom';
 import 'bootstrap/dist/css/bootstrap.min.css';
 import './footer.css';
 import GooglePayButton from '@google-pay/button-react';
+
 class Footer  extends Component {
     state = {  }
     render() { 
+
+
+
         return (
 			
 				<div>
@@ -96,42 +100,7 @@ class Footer  extends Component {
 		
 	</div>
 </div>
-<GooglePayButton
-  environment="PRODUCTION"
-  paymentRequest={{
-    apiVersion: 2,
-    apiVersionMinor: 0,
-    allowedPaymentMethods: [
-      {
-        type: 'CARD',
-        parameters: {
-          allowedAuthMethods: ['PAN_ONLY', 'CRYPTOGRAM_3DS'],
-          allowedCardNetworks: ['MASTERCARD', 'VISA'],
-        },
-        tokenizationSpecification: {
-          type: 'PAYMENT_GATEWAY',
-          parameters: {
-            gateway: 'PayU',
-          },
-        },
-      },
-    ],
-    merchantInfo: {
-      merchantId: 'BCR2DN6TWPJJRSJT',
-      merchantName: 'DigiWeb Solutions',
-    },
-    transactionInfo: {
-      totalPriceStatus: 'FINAL',
-      totalPriceLabel: 'Total',
-      totalPrice: '100.00',
-      currencyCode: 'USD',
-      countryCode: 'US',
-    },
-  }}
-  onLoadPaymentData={paymentRequest => {
-    console.log('Success', paymentRequest);
-  }}
-/>
+<div class='pm-button'><a href='https://www.payumoney.com/paybypayumoney/#/761F01E9032E7A24B1497731717CF741'><img src='https://www.payumoney.com/media/images/payby_payumoney/new_buttons/21.png' /></a></div> 
 				<div className="row">
 					<div className="col-md-12 text-center">
 						<p>
