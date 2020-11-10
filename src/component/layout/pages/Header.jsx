@@ -26,12 +26,12 @@ class Header extends  Component {
 							</p>
 							
 						</div>
-						<div class='pm-button'><a href='https://www.payumoney.com/paybypayumoney/#/EECD45B57D417A9AFD3E86DC3B236DF5'><img src='https://www.payumoney.com/media/images/payby_payumoney/new_buttons/21.png' /></a></div> 
+					
 					</div>
 				</div>
 			</div>
             
-		</div>
+		</div>z
 		
         <nav className="navbar navbar-expand-lg navbar-dark ftco_navbar bg-dark ftco-navbar-light" id="ftco-navbar" >
 			<div className="container">
