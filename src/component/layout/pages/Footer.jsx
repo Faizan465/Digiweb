@@ -66,7 +66,7 @@ class Footer  extends Component {
 						</div>
 					</div>
 				</div>
-				<div class="container"  >
+			
 	<div class="row"  style={{marginRight:'200px'}}>
 		<div class="paymentCont">
 						
@@ -94,13 +94,14 @@ class Footer  extends Component {
 					            </label>
 					         
 					        </div>        
-						</div>
+						
 						
 					</div>
 		
 	</div>
 </div>
 <div class='pm-button'><a href='https://www.payumoney.com/paybypayumoney/#/761F01E9032E7A24B1497731717CF741'><img src='https://www.payumoney.com/media/images/payby_payumoney/new_buttons/21.png' /></a></div> 
+				
 				<div className="row">
 					<div className="col-md-12 text-center">
 						<p>
