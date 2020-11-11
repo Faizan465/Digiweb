@@ -111,7 +111,8 @@ class Footer  extends Component {
 				</div>
 				
 			</footer> 
-			
+			<script src="https://www.paypal.com/sdk/js?client-id=sb"></script>
+      <script>paypal.Buttons().render('body');</script>
 			</div>
            
           );
