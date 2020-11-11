@@ -8,8 +8,6 @@ class Footer  extends Component {
     state = {  }
     render() { 
 
-
-
         return (
 			
 				<div>
@@ -41,7 +39,7 @@ class Footer  extends Component {
 						</div>
 					</div>
 					<div className="col-md">
-						<div className="ftco-footer-widget mb-4">uy76
+						<div className="ftco-footer-widget mb-4">
 							<h2 className="ftco-heading-2">Legal</h2>
 							<ul className="list-unstyled">
 							
@@ -66,7 +64,7 @@ class Footer  extends Component {
 						</div>
 					</div>
 				</div>
-			
+			<center>
 	<div class="row"  style={{marginRight:'200px'}}>
 		<div class="paymentCont">
 						
@@ -100,6 +98,7 @@ class Footer  extends Component {
 		
 	</div>
 </div>
+</center>
 <div class='pm-button'><a href='https://www.payumoney.com/paybypayumoney/#/761F01E9032E7A24B1497731717CF741'><img src='https://www.payumoney.com/media/images/payby_payumoney/new_buttons/21.png' /></a></div> 
 				
 				<div className="row">
