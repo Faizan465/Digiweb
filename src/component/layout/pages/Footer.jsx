@@ -16,13 +16,15 @@ class Footer  extends Component {
 				<div className="row mb-5">
 					<div className="col-md">
 						<div className="ftco-footer-widget mb-4">
-							<h2 className="ftco-footer-logo"><img src="images/imges.png" style={{height:'40px',width:'60px',marginLeft:'10%',zIndex:'0',backgroundColor:'#05091f'}}/></h2>
+							<h2 className="ftco-footer-logo"><img src="images/bar.jpg" style={{height:'150px',width:'200px',marginLeft:'10%',zIndex:'0',backgroundColor:'#05091f'}}/></h2>
 							<ul className="ftco-footer-social list-unstyled mt-2">
 								<li className="ftco-animate"><a href="https://twitter.com/home"><span className="fa fa-twitter"></span></a></li>
 								<li className="ftco-animate"><a href="https://www.facebook.com/DigiWebco/"><span className="fa fa-facebook"></span></a></li>
 								<li className="ftco-animate"><a href="https://github.com/Faizan465"><span className="fa fa-github"></span></a></li>
 							</ul>
 						</div>
+
+
 						
 					</div>
 					<div className="col-md">
@@ -100,7 +102,42 @@ class Footer  extends Component {
 </div>
 </center>
 <div class='pm-button'><a href='https://www.payumoney.com/paybypayumoney/#/761F01E9032E7A24B1497731717CF741'><img src='https://www.payumoney.com/media/images/payby_payumoney/new_buttons/21.png' /></a></div> 
-				
+<GooglePayButton
+  environment="PRODUCTION"
+  paymentRequest={{
+    apiVersion: 2,
+    apiVersionMinor: 0,
+    allowedPaymentMethods: [
+      {
+        type: 'CARD',
+        parameters: {
+          allowedAuthMethods: ['PAN_ONLY', 'CRYPTOGRAM_3DS'],
+          allowedCardNetworks: ['MASTERCARD', 'VISA'],
+        },
+        tokenizationSpecification: {
+          type: 'PAYMENT_GATEWAY',
+          parameters: {
+            gateway: 'gateway name',
+          },
+        },
+      },
+    ],
+    merchantInfo: { 
+      merchantId: ' BCR2DN6TWPJJRSJT',
+      merchantName: 'DigiWeb',
+    },
+    transactionInfo: {
+      totalPriceStatus: 'FINAL',
+      totalPriceLabel: 'Total',
+      totalPrice: '100.00',
+      currencyCode: 'USD',
+      countryCode: 'US',
+    },
+  }}
+  onLoadPaymentData={paymentRequest => {
+    console.log('Success', paymentRequest);
+  }}
+/>				
 				<div className="row">
 					<div className="col-md-12 text-center">
 						<p>
@@ -111,8 +148,7 @@ class Footer  extends Component {
 				</div>
 				
 			</footer> 
-			<script src="https://www.paypal.com/sdk/js?client-id=sb"></script>
-      <script>paypal.Buttons().render('body');</script>
+			
 			</div>
            
           );
